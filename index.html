@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ご提案デモ｜全力ストレッチ 大宮東口店・赤羽店 HP</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/svg+xml" href="site/assets/zenryoku-logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#0b0a08;
+  --black-soft:#161410;
+  --cream:#f3efe6;
+  --gold:#d9ad52;
+  --gold-light:#f0d58e;
+  --gold-deep:#b8903f;
+  --line-light:rgba(243,239,230,.18);
+  --serif:'Shippori Mincho','Yu Mincho','Hiragino Mincho ProN',serif;
+  --sans:'Noto Sans JP',sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--sans);background:
+  radial-gradient(ellipse 900px 600px at 85% 10%, rgba(217,173,82,.10), transparent 60%),
+  radial-gradient(ellipse 700px 500px at 8% 90%, rgba(217,173,82,.06), transparent 60%),
+  var(--black);
+  color:var(--cream);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:48px 24px;line-height:1.9}
+.wrap{display:flex;gap:76px;align-items:center;flex-wrap:wrap;justify-content:center;max-width:1140px}
+.pitch{max-width:460px}
+.eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.42em;text-transform:uppercase;color:var(--gold-light);display:flex;align-items:center;gap:14px;margin-bottom:22px}
+.eyebrow::before{content:"";width:36px;height:1px;background:var(--gold)}
+.pitch h1{font-family:var(--serif);font-size:31px;font-weight:600;line-height:1.65;letter-spacing:.04em}
+.pitch h1 em{font-style:normal;color:var(--gold-light)}
+.pitch > p{margin-top:18px;font-size:13.5px;color:rgba(243,239,230,.72)}
+.pitch ul{margin-top:20px;list-style:none;font-size:13.5px;color:rgba(243,239,230,.9)}
+.pitch li{padding:8px 0 8px 28px;position:relative;border-bottom:1px solid rgba(243,239,230,.08)}
+.pitch li::before{content:"✦";position:absolute;left:2px;color:var(--gold);font-size:12px}
+/* 案の切替 */
+.plan-toggle{margin-top:28px;display:flex;gap:10px}
+.plan-toggle button{flex:1;padding:13px 14px;border:1px solid var(--line-light);background:rgba(11,10,8,.5);color:rgba(243,239,230,.75);font-weight:700;font-size:12.5px;letter-spacing:.04em;cursor:pointer;text-align:left;transition:all .3s var(--ease);font-family:var(--sans)}
+.plan-toggle button small{display:block;font-weight:400;font-size:10.5px;color:rgba(243,239,230,.5);margin-top:4px;letter-spacing:0}
+.plan-toggle button:hover{border-color:var(--gold)}
+.plan-toggle button.on{border-color:var(--gold);background:rgba(217,173,82,.12);color:var(--gold-light)}
+/* QR */
+.qr-area{margin-top:26px;border:1px solid var(--line-light);background:rgba(11,10,8,.5);padding:22px 22px 18px}
+.qr-area h2{font-family:var(--serif);font-size:15px;font-weight:600;letter-spacing:.1em;margin-bottom:6px;color:var(--gold-light)}
+.qr-area h2::before{content:"— ";color:var(--gold)}
+.qr-area input{width:100%;padding:12px 14px;border:1px solid var(--line-light);background:var(--black);color:var(--cream);font-size:13px;font-family:var(--sans);margin-top:8px}
+.qr-area input:focus{outline:none;border-color:var(--gold)}
+.qr-area button{margin-top:10px;width:100%;padding:13px;border:none;background:linear-gradient(120deg,var(--gold-light),var(--gold));color:var(--black);font-weight:700;font-size:13px;letter-spacing:.14em;cursor:pointer;transition:all .3s var(--ease);font-family:var(--sans)}
+.qr-area button:hover{box-shadow:0 10px 26px rgba(217,173,82,.4);transform:translateY(-1px)}
+#qrbox{margin-top:14px;display:flex;justify-content:center;background:var(--cream);padding:14px;min-height:60px;align-items:center}
+#qrbox:empty::after{content:"公開URLを入れるとQRが出ます（お客様のスマホで即体験）";color:#8a8578;font-size:11.5px;text-align:center}
+.qr-note{margin-top:12px;font-size:10.5px;color:rgba(243,239,230,.45);line-height:1.8}
+.credit{margin-top:22px;font-size:10.5px;letter-spacing:.2em;color:rgba(243,239,230,.35)}
+/* phone frame */
+.phone{flex-shrink:0;width:390px;height:800px;background:#040404;border-radius:54px;padding:14px;box-shadow:0 40px 100px rgba(0,0,0,.7),0 0 0 1px rgba(217,173,82,.25),inset 0 0 0 2px #23201a;position:relative}
+.phone::before{content:"";position:absolute;top:26px;left:50%;transform:translateX(-50%);width:120px;height:28px;background:#040404;border-radius:16px;z-index:10}
+.phone .screen{width:100%;height:100%;border-radius:42px;overflow:hidden;background:var(--black);display:flex;flex-direction:column}
+.phone .statusbar{flex-shrink:0;height:46px;background:var(--black)}
+.phone iframe{width:100%;flex:1;border:none}
+@media(max-width:900px){
+  .phone{width:340px;height:700px}
+  .pitch h1{font-size:24px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="pitch">
+    <p class="eyebrow">Zenryoku Stretch — HP Proposal</p>
+    <h1>SNSで見つけた人が、<br>予約まで<em>迷わない</em>、<br>店の顔を。</h1>
+    <p>インスタ・TikTokで興味を持ったお客様が次に探すのは「公式サイト」。ホットペッパーの店舗ページだけでは、比較の土俵に乗ったまま。自店のHPなら、口コミ4.6超の信頼をそのまま予約につなげられます。</p>
+    <ul>
+      <li>トップ＋大宮東口店・赤羽店の店舗別ページ構成</li>
+      <li>口コミ4.66／4.69・リピート率93%を最初に見せる信頼設計</li>
+      <li>ホットペッパー予約への最短導線（各所にボタン）</li>
+      <li>採用（トレーナー募集）の受け皿も兼ねる</li>
+      <li>スマホ最適化済み（右の実機イメージ）</li>
+    </ul>
+    <div class="plan-toggle">
+      <button class="on" onclick="setPlan(this,'site/index.html')">本命：実写真サイト<small>トップ＋店舗別2ページ</small></button>
+      <button onclick="setPlan(this,'hp-gold.html')">A案：会社の顔HP<small>紺×白×赤・採用・相談・フォーム入り</small></button>
+      <button onclick="setPlan(this,'lp-gold.html')">B案：予約特化LP<small>黒×赤×金・初回体験に一点集中</small></button>
+    </div>
+    <div class="qr-area">
+      <h2>QRコードで実機体験</h2>
+      <input id="url" type="url" value="https://kehare.github.io/zenryoku-stretch-hp/">
+      <button onclick="makeQR()">QRコードを生成する</button>
+      <div id="qrbox"></div>
+      <p class="qr-note">※このQRをスマホで読み取ると、公開中の本命サイトをそのまま実機でご覧いただけます。</p>
+    </div>
+    <p class="credit">PROPOSAL BY WATABE YUKI</p>
+  </div>
+  <div class="phone">
+    <div class="screen">
+      <div class="statusbar"></div>
+      <iframe id="planFrame" src="site/index.html" title="全力ストレッチ HPモック（スマホ表示）"></iframe>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+<script>
+function setPlan(btn, src){
+  document.querySelectorAll('.plan-toggle button').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  document.getElementById('planFrame').src = src;
+}
+function makeQR(){
+  const url = document.getElementById('url').value.trim();
+  const box = document.getElementById('qrbox');
+  box.innerHTML = '';
+  if(!url){ return; }
+  if(typeof QRCode === 'undefined'){
+    box.innerHTML = '<span style="color:#8a2a2a;font-size:12px">オフラインのためQR生成ライブラリを読み込めませんでした。ネット接続後にページを再読み込みしてください（入力したURLは消えません）。</span>';
+    return;
+  }
+  new QRCode(box, { text: url, width: 180, height: 180 });
+}
+window.addEventListener('load', makeQR);
+</script>
+</body>
+</html>

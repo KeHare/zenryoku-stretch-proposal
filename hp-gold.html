@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大宮・赤羽のもみほぐし＆パーソナルストレッチ｜全力ストレッチ（A案・会社の顔HP）</title>
+  <meta name="description" content="大宮駅東口徒歩6分・赤羽駅徒歩4分。ザウルス式体幹軸調整×全身もみほぐしの全力ストレッチ。完全個室・女性トレーナーのマンツーマン施術、採用情報・お問い合わせ窓口つきの公式サイト。">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0b0a08">
+  <meta property="og:title" content="全力ストレッチ 大宮東口店・赤羽店">
+  <meta property="og:description" content="ほぐしてから、伸ばす。リピート率93%のザウルス式体幹軸調整ストレッチを大宮・赤羽で。">
+  <meta property="og:image" content="site/assets/images/omiya-campaign.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="site/assets/zenryoku-logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site/assets/site.css">
+  <script src="site/assets/site.js" defer></script>
+  <style>
+    /* ===== A案（会社の顔HP）専用の追加コンポーネント：本命と同じ黒×金×クリームの言語 ===== */
+    .quote{position:relative;padding-left:22px;border-left:2px solid var(--gold);margin-bottom:22px}
+    .quote p{font-family:var(--serif);font-size:clamp(16px,2vw,19px);line-height:2.1;color:var(--ink)}
+    .highlight{margin-top:24px;padding:22px 26px;border:1px solid rgba(217,173,82,.5);background:linear-gradient(120deg,rgba(240,213,142,.14),rgba(217,173,82,.08))}
+    .highlight p{font-family:var(--serif);font-size:clamp(17px,2.2vw,21px);color:var(--gold-deep);line-height:1.9}
+    .sign{margin-top:22px;font-size:12px;letter-spacing:.14em;color:var(--gray)}
+    /* メニューのアイコングリッド */
+    .menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:32px}
+    .menu-card{display:flex;align-items:center;gap:14px;border:1px solid var(--line-light);padding:15px 16px;transition:.3s}
+    .menu-card:hover{border-color:var(--gold)}
+    .menu-card .ic{width:42px;height:42px;flex-shrink:0;border:1px solid rgba(217,173,82,.55);color:var(--gold-light);display:flex;align-items:center;justify-content:center;font-size:18px}
+    .menu-card b{display:block;font-family:var(--serif);font-size:14.5px;font-weight:600;letter-spacing:.06em;color:var(--cream)}
+    .menu-card small{font-size:11px;color:rgba(243,239,230,.6)}
+    /* 料金（打ち消し価格つき） */
+    .price-row .was{font-size:13px;font-family:var(--sans);color:var(--gray);text-decoration:line-through;margin-right:10px}
+    .price-row.featured .was{color:rgba(243,239,230,.55)}
+    /* 店舗ブロック */
+    .shop-block{margin-bottom:52px}
+    .shop-block:last-child{margin-bottom:0}
+    .shop-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:16px;margin-bottom:18px}
+    .shop-head h3{font-size:clamp(22px,3vw,30px)}
+    .shop-head .rating{font-size:12.5px;color:var(--gray)}
+    .shop-head .rating b{font-family:var(--serif);font-size:18px;color:var(--gold-deep)}
+    .shop-head .rating .stars{color:var(--gold);letter-spacing:2px;margin-right:6px}
+    .shop-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+    .shop-btns .btn{padding:13px 26px;font-size:13.5px}
+    /* 採用 */
+    .stat-gold{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:26px;background:linear-gradient(120deg,var(--gold-light),var(--gold) 55%,var(--gold-deep));color:var(--black);padding:38px 40px;margin-bottom:44px}
+    .stat-gold .label{font-size:13px;font-weight:700;letter-spacing:.1em;opacity:.75}
+    .stat-gold .value{font-family:var(--serif);font-size:clamp(34px,5vw,52px);line-height:1.3}
+    .stat-gold .note{font-size:13px;font-weight:500;opacity:.8;margin-top:6px;max-width:34em}
+    .stat-gold .btns{display:flex;flex-direction:column;gap:12px}
+    .stat-gold .btns .btn{background:var(--black);color:var(--gold-light)}
+    .job-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:44px}
+    .job-card{display:flex;gap:14px;align-items:flex-start;border:1px solid var(--line-light);padding:20px;transition:.3s}
+    .job-card:hover{border-color:var(--gold)}
+    .job-card .ic{width:40px;height:40px;flex-shrink:0;border:1px solid rgba(217,173,82,.55);color:var(--gold-light);display:flex;align-items:center;justify-content:center;font-size:17px}
+    .job-card h4{font-family:var(--serif);font-size:15.5px;font-weight:600;margin-bottom:4px;color:var(--cream)}
+    .job-card p{font-size:12.5px;color:rgba(243,239,230,.65);line-height:1.8}
+    .flow-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .flow-card{border:1px solid var(--line-light);padding:26px}
+    .flow-card h3{font-size:17px;color:var(--gold-light);margin-bottom:20px;letter-spacing:.1em}
+    .flow-step{display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-top:1px solid rgba(243,239,230,.1)}
+    .flow-step .num{font-family:var(--serif);color:var(--gold);font-size:13px;letter-spacing:.1em;padding-top:2px;flex-shrink:0;min-width:24px}
+    .flow-step b{display:block;font-size:13.5px;color:var(--cream)}
+    .flow-step small{font-size:11.5px;color:rgba(243,239,230,.55)}
+    /* 相談ギミック */
+    .consult-choices{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:34px 0 20px}
+    .consult-choices button{padding:18px;text-align:left;font-size:13.5px;font-weight:700;line-height:1.6;font-family:var(--sans);background:var(--paper);color:var(--ink);border:1px solid var(--line);cursor:pointer;transition:.3s}
+    .consult-choices button:hover{border-color:var(--gold)}
+    .consult-choices button.selected{background:var(--black);color:var(--gold-light);border-color:var(--black)}
+    .consult-input{display:flex;gap:12px;margin-bottom:36px}
+    .consult-input input{flex:1;padding:15px 18px;font-size:14px;font-family:var(--sans);border:1px solid var(--line);background:#fff;outline:none}
+    .consult-input input:focus{border-color:var(--gold)}
+    .consult-answer{display:none;padding:38px;background:var(--black);color:var(--cream);border-left:2px solid var(--gold)}
+    .consult-answer.show{display:block;animation:fadeUp .8s var(--ease)}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+    .consult-answer .who{font-size:11.5px;letter-spacing:.28em;color:var(--gold-light);margin-bottom:18px;text-transform:uppercase}
+    .consult-answer blockquote{font-family:var(--serif);font-size:clamp(15px,2vw,18px);line-height:2.2;margin-bottom:26px}
+    .consult-answer .btns{display:flex;flex-wrap:wrap;gap:12px}
+    /* FAQカテゴリピル */
+    .faq-cats{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:36px}
+    .faq-cats button{padding:9px 22px;font-size:12px;font-weight:700;letter-spacing:.1em;font-family:var(--sans);background:transparent;color:var(--ink);border:1px solid var(--line);cursor:pointer;transition:.3s}
+    .faq-cats button:hover{border-color:var(--gold)}
+    .faq-cats button.selected{background:var(--black);color:var(--gold-light);border-color:var(--black)}
+    .faq-cat-tag{font-size:10px;font-weight:700;letter-spacing:.14em;color:var(--gold-deep);border:1px solid rgba(217,173,82,.5);padding:2px 10px;margin-right:4px;flex-shrink:0}
+    /* ギャラリー */
+    .gallery-track{display:flex;gap:16px;overflow-x:auto;padding-bottom:14px;scroll-snap-type:x mandatory;scrollbar-width:none}
+    .gallery-track::-webkit-scrollbar{display:none}
+    .gallery-card{flex:0 0 340px;scroll-snap-align:start;position:relative;height:320px;overflow:hidden}
+    .gallery-card img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+    .gallery-card:hover img{transform:scale(1.05)}
+    .gallery-card .tag{position:absolute;top:14px;right:14px;z-index:2;font-size:10.5px;font-weight:700;letter-spacing:.2em;color:var(--black);padding:7px 16px;background:linear-gradient(120deg,var(--gold-light),var(--gold))}
+    .gallery-card .caption{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:70px 18px 16px;background:linear-gradient(to top,rgba(11,10,8,.92),transparent)}
+    .gallery-card .caption b{display:block;font-family:var(--serif);color:var(--cream);font-size:16.5px;font-weight:600}
+    .gallery-card .caption span{color:rgba(243,239,230,.65);font-size:11.5px}
+    /* フォーム */
+    .form-card{max-width:720px;margin:44px auto 0;background:#fff;border:1px solid var(--line);padding:34px}
+    .form-card h3{font-size:18px;margin-bottom:6px}
+    .form-note{font-size:11.5px;color:var(--gray);margin-bottom:22px}
+    .form-restore{display:none;font-size:12.5px;font-weight:700;color:var(--gold-deep);margin-bottom:16px}
+    .form-restore.show{display:block}
+    .form-row{margin-bottom:18px}
+    .form-row label{display:block;font-size:12.5px;font-weight:700;letter-spacing:.06em;margin-bottom:8px}
+    .form-row label .req{color:var(--gold-deep);font-size:10.5px;margin-left:8px;border:1px solid rgba(217,173,82,.6);padding:1px 8px}
+    .form-row input,.form-row textarea{width:100%;padding:13px 15px;font-size:14.5px;font-family:var(--sans);border:1px solid var(--line);background:var(--paper);outline:none;transition:border-color .2s}
+    .form-row input:focus,.form-row textarea:focus{border-color:var(--gold)}
+    .form-row textarea{min-height:140px;resize:vertical}
+    .contact-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:920px;margin:0 auto}
+    .contact-card{border:1px solid var(--line);background:#fff;padding:24px}
+    .contact-card h3{font-size:15.5px;margin-bottom:8px}
+    .contact-card h3::before{content:"— ";color:var(--gold)}
+    .contact-card p{font-size:13px;color:var(--gray);line-height:1.9}
+    @media(max-width:960px){
+      .menu-grid,.job-grid,.flow-grid,.contact-cards{grid-template-columns:1fr}
+      .consult-choices{grid-template-columns:1fr 1fr}
+      .stat-gold{padding:30px 24px}
+    }
+    @media(max-width:640px){
+      .consult-choices{grid-template-columns:1fr}
+      .consult-input{flex-direction:column}
+      .gallery-card{flex-basis:290px;height:290px}
+    }
+
+    /* ===== A案の雰囲気への調整：白基調×紺×赤の公式トーン（構造・書体は本命のまま） ===== */
+    :root{
+      --black:#1e3f7d;            /* 暗色セクション＝紺 */
+      --black-soft:#152e5e;
+      --cream:#eef2f8;            /* 淡いブルーグレー */
+      --paper:#f7f9fb;            /* 白基調の地 */
+      --gold:#d6202f;             /* 主役色＝赤 */
+      --gold-light:#ff9aa2;
+      --gold-deep:#b3121f;
+      --ink:#1b2437;
+      --gray:#5d6474;
+      --line:rgba(27,36,55,.14);
+      --line-light:rgba(255,255,255,.24);
+    }
+    .hero{background:var(--black)}
+    .hero-media img{opacity:.5}
+    .hero-media::after{background:linear-gradient(to top,rgba(14,26,54,.94) 8%,rgba(14,26,54,.42) 45%,rgba(14,26,54,.58))}
+    .hero-watermark{color:rgba(255,255,255,.06)}
+    .method-watermark{color:rgba(255,255,255,.05)}
+    .reserve-section::before{color:rgba(255,255,255,.05)}
+    .marquee{color:#9db4e4}
+    .btn-gold,.global-nav .nav-cta,.reserve-button,.gallery-card .tag{color:#fff}
+    .stat-gold{color:#fff;background:linear-gradient(120deg,#e8404e,var(--gold) 55%,var(--gold-deep))}
+    .stat-gold .label,.stat-gold .note{opacity:.92}
+    .stat-gold .btns .btn{background:#0e1a36!important;color:#fff!important;border:none!important}
+    .highlight{border-color:rgba(214,32,47,.4);background:linear-gradient(120deg,rgba(214,32,47,.07),rgba(30,63,125,.08))}
+    .menu-card .ic,.job-card .ic{border-color:rgba(255,255,255,.4)}
+    .faq-cat-tag{border-color:rgba(214,32,47,.4)}
+    .shop-head .rating .stars{color:#f5a623}
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main">本文へ移動</a>
+
+<header class="site-header" data-header>
+  <a class="brand" href="#top" aria-label="全力ストレッチ トップ">
+    <svg class="brand-mark" viewBox="0 0 124 78" aria-hidden="true">
+      <path d="M4 7H60L5 57H60V7L118 57V7"></path>
+      <text class="brand-mark-word" x="61" y="74" text-anchor="middle">ZENRYOKU STRETCH</text>
+    </svg>
+    <span class="brand-copy">
+      <strong>全力ストレッチ</strong>
+      <small>OMIYA EAST / AKABANE</small>
+    </span>
+  </a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="global-nav" data-menu-toggle>
+    <span></span><span></span>
+    <span class="sr-only">メニューを開く</span>
+  </button>
+  <nav class="global-nav" id="global-nav" aria-label="メインメニュー" data-nav>
+    <a href="#about">全力ストレッチとは</a>
+    <a href="#menu">施術メニュー</a>
+    <a href="#shops">店舗・料金</a>
+    <a href="#recruit">採用情報</a>
+    <a href="#contact">お問い合わせ</a>
+    <a class="nav-cta" href="#shops">WEB予約</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ヒーロー -->
+  <section class="hero" id="top" style="padding:0">
+    <div class="hero-media" aria-hidden="true">
+      <img src="site/assets/images/omiya-campaign.jpg" alt="" width="1600" height="994">
+    </div>
+    <p class="hero-watermark" aria-hidden="true">全力</p>
+    <div class="hero-inner">
+      <p class="hero-kicker">Saurus Method — 体幹軸調整 × 全身もみほぐし</p>
+      <h1 class="reveal">
+        <small>OMIYA EAST ▪ AKABANE</small>
+        痛気持ちイイ〜が、<br><em>癖になる。</em>
+      </h1>
+      <p class="hero-lead reveal">メディア出演多数。女性トレーナーがマンツーマンで、凝り固まった筋肉をほぐし、伸ばす。<br><strong>芸能人も通う"ストレッチエンターテイメント"を、大宮と赤羽で。</strong></p>
+      <div class="hero-actions reveal">
+        <a class="btn btn-gold" href="#shops">初回体験 60分 ¥4,900で予約する</a>
+        <a class="text-link" href="#about">全力ストレッチとは ↓</a>
+      </div>
+      <div class="hero-badges reveal">
+        <div class="badge"><span class="num">4.66<small>/5.0・口コミ207件</small></span><span class="src">大宮東口店｜ホットペッパービューティー</span></div>
+        <div class="badge"><span class="num">4.69<small>/5.0・口コミ31件</small></span><span class="src">赤羽店｜ホットペッパービューティー</span></div>
+        <div class="badge"><span class="num">93<small>% リピート率</small></span><span class="src">全国70店舗の全力ストレッチブランド</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>ほぐす — 伸ばす — 軸から整える ✦ ZENRYOKU STRETCH ✦ 大宮東口店 ✦ 赤羽店 ✦ 完全個室 ✦ マンツーマン ✦&nbsp;</span>
+      <span>ほぐす — 伸ばす — 軸から整える ✦ ZENRYOKU STRETCH ✦ 大宮東口店 ✦ 赤羽店 ✦ 完全個室 ✦ マンツーマン ✦&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- 全力ストレッチとは -->
+  <section id="about">
+    <div class="container">
+      <div class="split">
+        <div class="split-media reveal">
+          <img src="site/assets/images/akabane-space.jpg" alt="完全個室での施術スペース" loading="lazy" width="1080" height="1080">
+          <span class="frame-line" aria-hidden="true"></span>
+          <span class="img-label">PRIVATE ROOM</span>
+        </div>
+        <div class="split-copy reveal">
+          <p class="eyebrow">About Us</p>
+          <h2>全力ストレッチとは</h2>
+          <div class="quote"><p>常に全力で上り続ける志を持つものを、全力ストレッチのトレーナーとする。——トレーナー心得「全力"常"昇志向」より</p></div>
+          <p>全力ストレッチは、元格闘家オーナー・阿佐美ザウルスが編み出した"ザウルス式"体幹軸調整ストレッチの専門店です。スポーツトレーニングの観点と、長年のタイ古式マッサージセラピストとしての観点から生まれた、美しく強いカラダをつくるオリジナルの手法です。</p>
+          <p>ただ伸ばすだけでも、ただ揉むだけでもありません。まずマッサージで表面の筋肉をゆるめ、そのあとで深層筋までしっかりストレッチ。だから、体の奥にあるコリや痛みまで届きます。</p>
+          <p>全国70店舗、リピート率93%。「体がカチッと元の位置に戻った」「悩みに本気で向き合ってくれる」——そんな声に応え続けるために、大宮と赤羽でも、専属トレーナーが全力でお手伝いします。</p>
+          <div class="highlight"><p>ほぐしてから、伸ばす。<br>だから、深層筋まで変わる。</p></div>
+          <p class="sign">全力ストレッチ 大宮東口店・赤羽店</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 施術メニュー -->
+  <section class="method-section" id="menu">
+    <p class="method-watermark" aria-hidden="true">体幹軸調整法</p>
+    <div class="container">
+      <div class="split reverse">
+        <div class="split-media reveal">
+          <img src="site/assets/images/omiya-staff.jpg" alt="女性トレーナーによるマンツーマン施術" loading="lazy" width="985" height="948">
+          <span class="frame-line" aria-hidden="true"></span>
+          <span class="img-label">完全予約制・完全個室</span>
+        </div>
+        <div class="split-copy">
+          <p class="eyebrow on-dark reveal">Menu</p>
+          <h2 class="reveal" style="color:var(--cream)">ほぐす、だけじゃない。<br><em style="font-style:normal;color:var(--gold-light)">伸ばす、まで全力。</em></h2>
+          <p class="reveal" style="margin-top:20px">筋肉には表層筋と深層筋があり、アプローチの仕方が異なります。もみほぐしで表層筋をゆるめてから、コリや痛みの根本原因である深層筋をストレッチ。美姿勢をつくる「4つの軸」——肩甲骨・横隔膜・骨盤・足の重心を、女性トレーナーがマンツーマンで整えます。お客様はベッドに寝ているだけでOKです。</p>
+          <div class="menu-grid reveal">
+            <div class="menu-card"><span class="ic">👐</span><span><b>全身もみほぐし</b><small>表層筋をゆるめる強圧マッサージ</small></span></div>
+            <div class="menu-card"><span class="ic">🤸</span><span><b>パーソナルストレッチ</b><small>深層筋まで届くマンツーマン施術</small></span></div>
+            <div class="menu-card"><span class="ic">🦋</span><span><b>肩甲骨はがし</b><small>首・肩周りの軸を整える</small></span></div>
+            <div class="menu-card"><span class="ic">🫁</span><span><b>横隔膜ストレッチ</b><small>呼吸・お腹周りの軸を整える</small></span></div>
+            <div class="menu-card"><span class="ic">🦴</span><span><b>骨盤調整</b><small>腰痛・体幹の軸を整える</small></span></div>
+            <div class="menu-card"><span class="ic">🦶</span><span><b>足の重心ケア</b><small>姿勢の土台を整える</small></span></div>
+          </div>
+          <a class="btn btn-gold reveal" href="#shops" style="margin-top:30px">店舗を選んでWEB予約する</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 料金 -->
+  <section class="center" id="price">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Price</p>
+        <h2 class="sec-title">料金</h2>
+        <p class="sec-lead">価格はすべて税込。会員制ですが入会金・会費は無料です。</p>
+      </div>
+      <div class="price-table reveal">
+        <div class="price-row">
+          <div><span>First 60min</span><strong>初回体験 60分</strong></div>
+          <p><span class="was">¥13,200</span><small>税込</small>¥4,900</p>
+        </div>
+        <div class="price-row featured">
+          <div><span>First 90min — おすすめ</span><strong>初回体験 90分</strong></div>
+          <p><span class="was">¥19,800</span><small>税込</small>¥6,900</p>
+        </div>
+        <div class="price-row">
+          <div><span>Standard</span><strong>通常 60分</strong></div>
+          <p><small>税込</small>¥13,200</p>
+        </div>
+        <div class="price-row">
+          <div><span>Deep</span><strong>通常 90分</strong></div>
+          <p><small>税込</small>¥19,800</p>
+        </div>
+        <div class="price-row">
+          <div><span>Trainer</span><strong>トレーナー指名料</strong></div>
+          <p><small>税込</small>¥3,300</p>
+        </div>
+      </div>
+      <p class="price-note reveal">※料金・キャンペーン内容は時期により変わります。最新の料金はご予約ページでご確認ください。<br>※会員になると会員様価格のお得なチケットをご利用いただけます（非会員のままの都度利用も可能です）。</p>
+    </div>
+  </section>
+
+  <!-- 店舗案内 -->
+  <section class="store-access" id="shops">
+    <div class="container" style="max-width:880px">
+      <div class="sec-head reveal" style="text-align:center">
+        <p class="eyebrow" style="justify-content:center">Shop</p>
+        <h2 class="sec-title">店舗案内・WEB予約</h2>
+        <p class="sec-lead" style="margin-left:auto;margin-right:auto">大宮と赤羽、どちらも駅から歩いてすぐ。通いやすい方をお選びください。</p>
+      </div>
+
+      <div class="shop-block reveal">
+        <div class="shop-head">
+          <h3>大宮東口店</h3>
+          <span class="rating"><span class="stars">★★★★★</span><b>4.66</b>（口コミ207件・ホットペッパービューティー）</span>
+        </div>
+        <dl class="access-list">
+          <div><dt>ADDRESS</dt><dd>埼玉県さいたま市大宮区大門町3-59 小沢ビル3F</dd></div>
+          <div><dt>ACCESS</dt><dd>JR大宮駅 東口より徒歩6分</dd></div>
+          <div><dt>HOURS</dt><dd>10:00〜22:00（夜20時以降の受付も可）／不定休（年中無休）</dd></div>
+          <div><dt>PAYMENT</dt><dd>各種クレジットカード／PayPay／QUICPay／交通系IC</dd></div>
+          <div><dt>PARKING</dt><dd>近隣のコインパーキングをご利用ください</dd></div>
+          <div><dt>TRAINER</dt><dd>MOMOKA・SHIHO・YUUKI・SAKURA・MERU・KANAE</dd></div>
+        </dl>
+        <div class="shop-btns">
+          <a class="btn btn-gold" href="https://beauty.hotpepper.jp/kr/slnH000693679/" target="_blank" rel="noopener">大宮東口店をWEB予約する</a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=埼玉県さいたま市大宮区大門町3-59+小沢ビル" target="_blank" rel="noopener">地図を見る</a>
+          <a class="btn btn-outline" href="https://www.instagram.com/zenryoku.omiyaeast/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+
+      <div class="shop-block reveal">
+        <div class="shop-head">
+          <h3>赤羽店</h3>
+          <span class="rating"><span class="stars">★★★★★</span><b>4.69</b>（口コミ31件・ホットペッパービューティー）</span>
+        </div>
+        <dl class="access-list">
+          <div><dt>ADDRESS</dt><dd>東京都北区赤羽2-17-7 プライム赤羽4F</dd></div>
+          <div><dt>ACCESS</dt><dd>JR赤羽駅 東口より徒歩4分</dd></div>
+          <div><dt>HOURS</dt><dd>10:00〜22:00／不定休</dd></div>
+          <div><dt>PAYMENT</dt><dd>各種クレジットカード／QR決済／交通系IC</dd></div>
+          <div><dt>PARKING</dt><dd>コインパーキングあり</dd></div>
+          <div><dt>TRAINER</dt><dd>MOMOKA・SUZUKA・KANADE・NAO・NARUMI・SHIHO・YUUKI・MERU</dd></div>
+        </dl>
+        <div class="shop-btns">
+          <a class="btn btn-gold" href="https://beauty.hotpepper.jp/kr/slnH000744509/" target="_blank" rel="noopener">赤羽店をWEB予約する</a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=東京都北区赤羽2-17-7+プライム赤羽" target="_blank" rel="noopener">地図を見る</a>
+          <a class="btn btn-outline" href="https://www.instagram.com/zenryoku.akabane/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 採用情報 -->
+  <section class="social-section" id="recruit">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow on-dark">Recruitment</p>
+        <h2 class="sec-title" style="color:var(--cream)">採用情報</h2>
+        <p class="sec-lead" style="color:rgba(243,239,230,.7)">人のカラダと本気で向き合うトレーナーを募集しています。</p>
+      </div>
+      <div class="stat-gold reveal">
+        <div>
+          <p class="label">研修で身につくのは</p>
+          <p class="value">リピート率93%の技術</p>
+          <p class="note">全国70店舗ブランドの"ザウルス式"体幹軸調整を、研修で学べます。</p>
+        </div>
+        <div class="btns">
+          <a href="https://www.instagram.com/zenryoku.omiyaeast/" target="_blank" rel="noopener" class="btn">Instagramで問い合わせる</a>
+          <a href="#contact" class="btn" style="background:transparent;border:1px solid rgba(11,10,8,.4);color:var(--black)">フォームで問い合わせる</a>
+        </div>
+      </div>
+      <div class="job-grid reveal">
+        <div class="job-card"><span class="ic">🎓</span><div><h4>ザウルス式の研修あり</h4><p>解剖学に基づく体幹軸調整の手技を、研修で基礎から身につけられます。</p></div></div>
+        <div class="job-card"><span class="ic">🚉</span><div><h4>駅チカの2店舗</h4><p>勤務地は大宮駅東口 徒歩6分または赤羽駅 徒歩4分。通勤しやすい立地です。</p></div></div>
+        <div class="job-card"><span class="ic">💪</span><div><h4>女性トレーナー活躍中</h4><p>両店とも女性トレーナーがマンツーマン施術の主役として活躍しています。</p></div></div>
+        <div class="job-card"><span class="ic">🚪</span><div><h4>完全予約制・個室サロン</h4><p>完全予約制なので、一人ひとりのお客様と落ち着いて向き合えます。</p></div></div>
+      </div>
+      <div class="flow-grid reveal">
+        <div class="flow-card">
+          <h3>— 応募の流れ</h3>
+          <div class="flow-step"><span class="num">01</span><div><b>InstagramのDMまたはフォームから連絡</b><small>「採用希望」とだけ書いてもらえれば大丈夫です</small></div></div>
+          <div class="flow-step"><span class="num">02</span><div><b>店舗見学・面談</b><small>お店の雰囲気を見てから決めてください</small></div></div>
+          <div class="flow-step"><span class="num">03</span><div><b>研修スタート</b><small>ザウルス式の手技を基礎から習得</small></div></div>
+          <div class="flow-step"><span class="num">04</span><div><b>トレーナーデビュー</b><small>あなたの指名を待つお客様がいます</small></div></div>
+        </div>
+        <div class="flow-card">
+          <h3>— 募集要項</h3>
+          <div class="flow-step"><span class="num">給</span><div><b>給与：{{要確認}}</b><small>オーナー様確認のうえ掲載します</small></div></div>
+          <div class="flow-step"><span class="num">時</span><div><b>勤務時間・シフト：{{要確認}}</b><small>営業時間は10:00〜22:00です</small></div></div>
+          <div class="flow-step"><span class="num">休</span><div><b>休日・待遇：{{要確認}}</b><small>オーナー様確認のうえ掲載します</small></div></div>
+          <div class="flow-step"><span class="num">他</span><div><b>未経験可否・資格：{{要確認}}</b><small>研修制度の詳細と合わせて掲載します</small></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- トレーナーに相談する -->
+  <section id="consult">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Consult</p>
+        <h2 class="sec-title">いま、カラダのどこがつらい？</h2>
+        <p class="sec-lead">当てはまるものを選ぶと、全力ストレッチでの向き合い方をお答えします。</p>
+      </div>
+      <div class="consult-choices reveal" id="consultChoices"></div>
+      <div class="consult-input reveal">
+        <input type="text" id="consultInput" placeholder="その他の悩みを自由に入力してください...">
+        <button class="btn btn-gold" id="consultSubmit" style="padding:15px 32px">相談する</button>
+      </div>
+      <div class="consult-answer" id="consultAnswer">
+        <p class="who">Zenryoku Trainer — <span id="consultLabel"></span></p>
+        <blockquote id="consultResponse"></blockquote>
+        <p style="font-size:13.5px;color:rgba(243,239,230,.7);margin-bottom:18px">カラダの状態は一人ひとり違います。まずは初回体験で、あなたのカラダを見せてください。</p>
+        <div class="btns">
+          <a href="https://beauty.hotpepper.jp/kr/slnH000693679/" target="_blank" rel="noopener" class="btn btn-gold" style="padding:14px 26px;font-size:13.5px">大宮東口店を予約</a>
+          <a href="https://beauty.hotpepper.jp/kr/slnH000744509/" target="_blank" rel="noopener" class="btn btn-gold" style="padding:14px 26px;font-size:13.5px">赤羽店を予約</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="trainer-section center" id="faq">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow" style="justify-content:center">FAQ</p>
+        <h2 class="sec-title">よくあるご質問</h2>
+        <p class="sec-lead" style="margin-left:auto;margin-right:auto">はじめての方が気になるポイントにお答えします。</p>
+      </div>
+      <div class="faq-cats reveal" id="faqCats"></div>
+      <div class="faq-list reveal" id="faqList">
+        <details data-cat="来店前"><summary><span class="faq-cat-tag">来店前</span>どんな服装で行けばいいですか？</summary><p>お着替え・タオル・飲料のご用意がありますので、手ぶらでお越しいただけます。お仕事帰りのスーツのままでも大丈夫です。</p></details>
+        <details data-cat="来店前"><summary><span class="faq-cat-tag">来店前</span>予約は必要ですか？</summary><p>完全予約制です。ホットペッパービューティーのWEB予約が24時間ご利用いただけます。当日予約も空きがあれば可能です。</p></details>
+        <details data-cat="施術"><summary><span class="faq-cat-tag">施術</span>ストレッチは痛くないですか？</summary><p>「痛気持ちイイ」と感じる絶妙な強さを、お客様と会話しながら調整します。緊張しやすい方には、自律神経に関わる脊柱近くの筋肉をゆるめる施術から始めますのでご安心ください。</p></details>
+        <details data-cat="施術"><summary><span class="faq-cat-tag">施術</span>男性でも女性でも利用できますか？</summary><p>はい、どちらのお客様も多くご利用いただいています。女性のお客様には強圧を好まれる方も多くいらっしゃいます。施術は完全個室で、女性トレーナーがマンツーマンで担当します。</p></details>
+        <details data-cat="施術"><summary><span class="faq-cat-tag">施術</span>スポーツをしていなくても大丈夫？</summary><p>もちろんです。デスクワークの肩こり・腰痛の方が多く通われています。一方で柔軟性を上げたいスポーツをされる方（特にゴルフ）にもおすすめで、飛距離が10ヤード伸びた方もいらっしゃいます。</p></details>
+        <details data-cat="料金"><summary><span class="faq-cat-tag">料金</span>入会金や会費はかかりますか？</summary><p>会員制ですが、入会金・会費は無料です。会員になると会員様価格のお得なチケットをご利用いただけます。非会員のままの都度利用も可能です。</p></details>
+        <details data-cat="採用"><summary><span class="faq-cat-tag">採用</span>トレーナー未経験でも応募できますか？</summary><p>ザウルス式体幹軸調整の研修制度があります。募集状況・応募条件の詳細は、InstagramのDMまたはお問い合わせフォームからお気軽にご確認ください。</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ギャラリー -->
+  <section class="center" id="gallery">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow" style="justify-content:center">Gallery</p>
+        <h2 class="sec-title">お店の風景</h2>
+        <p class="sec-lead" style="margin-left:auto;margin-right:auto">清潔感のある個室で、まわりを気にせず施術に集中できます。</p>
+      </div>
+      <div class="gallery-track reveal">
+        <div class="gallery-card"><img src="site/assets/images/akabane-space.jpg" alt="完全個室の施術スペース" loading="lazy" width="1080" height="1080"><span class="tag">店内</span><div class="caption"><b>完全個室の施術スペース</b><span>清潔感と高級感にこだわった空間</span></div></div>
+        <div class="gallery-card"><img src="site/assets/images/omiya-staff.jpg" alt="ザウルス式の施術風景" loading="lazy" width="985" height="948"><span class="tag">施術</span><div class="caption"><b>ザウルス式の施術風景</b><span>ほぐしてから伸ばすWアプローチ</span></div></div>
+        <div class="gallery-card"><img src="site/assets/images/akabane-staff.jpg" alt="トレーナー陣" loading="lazy" width="1080" height="1080"><span class="tag">トレーナー</span><div class="caption"><b>トレーナー陣</b><span>解剖学を学んだ女性トレーナーが担当</span></div></div>
+        <div class="gallery-card"><img src="site/assets/images/omiya-cover.jpg" alt="店舗受付" loading="lazy" width="1280" height="1280"><span class="tag">アクセス</span><div class="caption"><b>駅から歩いてすぐ</b><span>大宮駅東口 徒歩6分／赤羽駅 徒歩4分</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- お問い合わせ -->
+  <section class="store-access" id="contact">
+    <div class="container">
+      <div class="sec-head reveal" style="text-align:center">
+        <p class="eyebrow" style="justify-content:center">Contact</p>
+        <h2 class="sec-title">ご予約・お問い合わせ</h2>
+        <p class="sec-lead" style="margin-left:auto;margin-right:auto">施術のご予約はWEB予約が便利です。24時間受け付けています。</p>
+      </div>
+      <div class="contact-cards reveal">
+        <div class="contact-card"><h3>お電話</h3><p>{{要確認:店舗電話番号}}<br>受付 10:00〜22:00</p></div>
+        <div class="contact-card"><h3>大宮東口店</h3><p>埼玉県さいたま市大宮区大門町3-59 小沢ビル3F</p></div>
+        <div class="contact-card"><h3>赤羽店</h3><p>東京都北区赤羽2-17-7 プライム赤羽4F</p></div>
+      </div>
+      <form class="form-card reveal" id="contactForm" action="{{要確認:フォーム送信先エンドポイント}}" method="POST">
+        <h3>フォームでのお問い合わせ（採用・取材・その他）</h3>
+        <p class="form-note">入力内容はこの端末に自動保存されます。途中でページを閉じても、次に開いたとき続きから書けます。</p>
+        <p class="form-restore" id="formRestoreNote">前回の入力内容を復元しました。</p>
+        <div class="form-row"><label>お名前<span class="req">必須</span></label><input type="text" name="name" required></div>
+        <div class="form-row"><label>メールアドレス<span class="req">必須</span></label><input type="email" name="email" required></div>
+        <div class="form-row"><label>電話番号（任意）</label><input type="tel" name="tel"></div>
+        <div class="form-row"><label>お問い合わせ内容<span class="req">必須</span></label><textarea name="message" required placeholder="採用希望の方は「採用希望」とだけでも大丈夫です"></textarea></div>
+        <button type="submit" class="btn btn-gold" style="width:100%">この内容で送信する</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- 予約クロージング -->
+  <section class="reserve-section">
+    <div class="container reserve-inner reveal">
+      <p class="eyebrow on-dark" style="justify-content:center">Reservation</p>
+      <h2>さあ、全力で<br>整えにいこう。</h2>
+      <div class="reserve-buttons">
+        <a class="reserve-button" href="https://beauty.hotpepper.jp/kr/slnH000693679/" target="_blank" rel="noopener">
+          <small>大宮東口店・初回60分 ¥4,900〜</small>
+          <strong>空き状況を見て予約する ↗</strong>
+        </a>
+        <a class="reserve-button" href="https://beauty.hotpepper.jp/kr/slnH000744509/" target="_blank" rel="noopener">
+          <small>赤羽店・初回60分 ¥4,900〜</small>
+          <strong>空き状況を見て予約する ↗</strong>
+        </a>
+      </div>
+      <p class="reserve-tel">完全予約制｜夜22時まで営業</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <svg class="brand-mark" viewBox="0 0 124 78" aria-hidden="true" style="width:56px">
+          <path d="M4 7H60L5 57H60V7L118 57V7"></path>
+          <text class="brand-mark-word" x="61" y="74" text-anchor="middle">ZENRYOKU STRETCH</text>
+        </svg>
+        <strong>全力ストレッチ 大宮東口店・赤羽店</strong>
+      </div>
+      <div class="footer-shops">
+        <p>大宮東口店｜埼玉県さいたま市大宮区大門町3-59 小沢ビル3F</p>
+        <p>赤羽店｜東京都北区赤羽2-17-7 プライム赤羽4F</p>
+      </div>
+    </div>
+    <div class="mock-note">【提案用モック（A案・会社の顔HP）】本サイトはHP制作のご提案用サンプルです。掲載している料金・口コミ件数・店舗情報・トレーナー名は2026年7月時点の公式サイト（zn-stretch.com）およびホットペッパービューティーの公開情報に基づく仮置きであり、正式公開時にはオーナー様確認のうえ差し替えます。リピート率93%は全力ストレッチ公式サイトの公表値です。</div>
+    <p class="copyright">© 2026 ZENRYOKU STRETCH OMIYA EAST / AKABANE</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+  /* トレーナーに相談する（回答は公式サイト・ホットペッパー掲載の施術説明に基づく） */
+  var CONSULT_DATA = [
+    { label: '肩こり・首こりがつらい', keywords: '肩、首、こり、コリ、肩甲骨、デスクワーク、パソコン', response: '肩こりの根本は、表層だけでなく深層の筋肉が固まっていることが多いんです。まず強圧のもみほぐしで表面をゆるめてから、肩甲骨まわりを中心に深層筋をストレッチします。表層がほぐれることで、深層までしっかり伸びますよ。' },
+    { label: '腰痛・骨盤まわりが気になる', keywords: '腰、骨盤、腰痛、座り、産後', response: '腰は「骨盤（腰痛・体幹）」の軸として集中ケアする部位です。骨盤調整と体幹軸のストレッチで、腰だけでなく全身のバランスから整えます。施術後は「立ってるだけでラク！」という声をよくいただきます。' },
+    { label: '猫背・姿勢を直したい', keywords: '猫背、姿勢、巻き肩、スマホ', response: '美姿勢をつくるには、首・肩周り（肩甲骨）、横隔膜（呼吸）、骨盤（体幹）、足の重心という「4つの軸」を整えることが大切です。トレーニングだけでは届かない部分に、ほぐし×ストレッチのWアプローチで働きかけます。' },
+    { label: 'スポーツの柔軟性を上げたい', keywords: 'スポーツ、ゴルフ、柔軟、可動域、運動、飛距離、筋トレ', response: 'すべてのスポーツに柔軟性は欠かせません。特にゴルフをされる方にはおすすめで、飛距離が10ヤード伸びた方もいらっしゃいます。ご自身の競技や目標に合わせて、可動域を広げる施術を組み立てます。' }
+  ];
+  var CONSULT_FALLBACK = { label: 'その他の悩み', response: 'カラダの悩みは人それぞれです。カウンセリングでお話を聞かせていただき、その日のあなたの状態に合わせた施術を組み立てます。まずは初回体験で、お気軽にご相談ください。' };
+  var choicesBox = document.getElementById('consultChoices');
+  var answerBox = document.getElementById('consultAnswer');
+  var labelEl = document.getElementById('consultLabel');
+  var respEl = document.getElementById('consultResponse');
+  function showAnswer(item, btn) {
+    choicesBox.querySelectorAll('button').forEach(function (b) { b.classList.remove('selected'); });
+    if (btn) btn.classList.add('selected');
+    labelEl.textContent = item.label;
+    respEl.textContent = '「' + item.response + '」';
+    answerBox.classList.remove('show');
+    void answerBox.offsetWidth;
+    answerBox.classList.add('show');
+    answerBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+  CONSULT_DATA.forEach(function (item) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.textContent = item.label;
+    b.addEventListener('click', function () { showAnswer(item, b); });
+    choicesBox.appendChild(b);
+  });
+  var input = document.getElementById('consultInput');
+  function consultSearch() {
+    var q = input.value.trim();
+    if (!q) return;
+    var hit = null;
+    CONSULT_DATA.some(function (item) {
+      return item.keywords.split(/[、,\s]+/).some(function (kw) {
+        if (kw && q.indexOf(kw) !== -1) { hit = item; return true; }
+        return false;
+      });
+    });
+    showAnswer(hit || CONSULT_FALLBACK, null);
+  }
+  document.getElementById('consultSubmit').addEventListener('click', consultSearch);
+  input.addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); consultSearch(); } });
+
+  /* FAQ：カテゴリ絞り込み */
+  var faqList = document.getElementById('faqList');
+  var faqItems = Array.prototype.slice.call(faqList.querySelectorAll('details'));
+  var catsBox = document.getElementById('faqCats');
+  var cats = ['すべて'];
+  faqItems.forEach(function (item) {
+    var c = item.getAttribute('data-cat');
+    if (c && cats.indexOf(c) === -1) cats.push(c);
+  });
+  cats.forEach(function (cat, idx) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.textContent = cat;
+    if (idx === 0) b.classList.add('selected');
+    b.addEventListener('click', function () {
+      catsBox.querySelectorAll('button').forEach(function (x) { x.classList.remove('selected'); });
+      b.classList.add('selected');
+      faqItems.forEach(function (item) {
+        item.style.display = (cat === 'すべて' || item.getAttribute('data-cat') === cat) ? '' : 'none';
+        item.removeAttribute('open');
+      });
+    });
+    catsBox.appendChild(b);
+  });
+
+  /* フォーム：localStorage自動保存・復元・送信時クリア */
+  var form = document.getElementById('contactForm');
+  var STORE_KEY = 'zenryoku_hpgold_contact_draft_v1';
+  var fields = Array.prototype.slice.call(form.querySelectorAll('input, textarea'));
+  try {
+    var saved = JSON.parse(localStorage.getItem(STORE_KEY) || 'null');
+    if (saved) {
+      var restored = false;
+      fields.forEach(function (f) {
+        if (saved[f.name]) { f.value = saved[f.name]; restored = true; }
+      });
+      if (restored) document.getElementById('formRestoreNote').classList.add('show');
+    }
+  } catch (e) { /* 壊れた保存データは無視して新規入力へ */ }
+  function saveDraft() {
+    var data = {};
+    fields.forEach(function (f) { if (f.value) data[f.name] = f.value; });
+    try { localStorage.setItem(STORE_KEY, JSON.stringify(data)); } catch (e) {}
+  }
+  fields.forEach(function (f) { f.addEventListener('input', saveDraft); });
+  form.addEventListener('submit', function () {
+    try { localStorage.removeItem(STORE_KEY); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>

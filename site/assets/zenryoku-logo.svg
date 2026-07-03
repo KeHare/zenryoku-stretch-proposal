@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 78" role="img" aria-labelledby="title">
+  <title>ZENRYOKU STRETCH</title>
+  <path
+    d="M4 7H60L5 57H60V7L118 57V7"
+    fill="none"
+    stroke="#111111"
+    stroke-width="3"
+    stroke-linecap="square"
+    stroke-linejoin="miter"
+  />
+  <text
+    x="61"
+    y="74"
+    fill="#111111"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="7"
+    font-weight="700"
+    letter-spacing="1.45"
+    text-anchor="middle"
+  >ZENRYOKU STRETCH</text>
+</svg>

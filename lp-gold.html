@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大宮・赤羽のもみほぐし＆パーソナルストレッチ｜全力ストレッチ（B案・予約特化LP）</title>
+  <meta name="description" content="痛気持ちイイ〜が癖になる。ザウルス式体幹軸調整×全身もみほぐし&パーソナルストレッチの全力ストレッチ、大宮東口店・赤羽店。完全予約制・夜22時まで営業。初回60分4,900円〜。">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0b0a08">
+  <meta property="og:title" content="全力ストレッチ 大宮東口店・赤羽店">
+  <meta property="og:description" content="痛気持ちイイ〜が、癖になる。初回体験60分¥4,900〜。">
+  <meta property="og:image" content="site/assets/images/omiya-campaign.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="site/assets/zenryoku-logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site/assets/site.css">
+  <script src="site/assets/site.js" defer></script>
+  <style>
+    /* ===== B案（予約特化LP）専用の追加コンポーネント：本命と同じ黒×金×クリームの言語 ===== */
+    /* 悩みチップ */
+    .chips{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:860px;margin:0 auto}
+    .chip{border:1px solid var(--line);background:#fff;padding:12px 24px;font-size:14px;font-weight:700;display:flex;align-items:center;gap:10px;transition:.3s}
+    .chip:hover{border-color:var(--gold)}
+    .chip::before{content:"✦";color:var(--gold);font-size:12px}
+    .worry-closing{text-align:center;margin-top:46px;font-family:var(--serif);font-size:clamp(17px,2.4vw,23px);line-height:2;letter-spacing:.04em}
+    .worry-closing em{font-style:normal;color:var(--gold-deep)}
+    /* 選ばれる理由 */
+    .reason-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .reason{display:flex;gap:18px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);padding:28px}
+    .reason .ic{width:50px;height:50px;flex-shrink:0;border:1px solid rgba(217,173,82,.55);color:var(--gold-deep);display:flex;align-items:center;justify-content:center;font-size:22px}
+    .reason h3{font-size:16.5px;margin-bottom:6px}
+    .reason p{font-size:13px;color:var(--gray);line-height:1.9}
+    /* 初回価格カード */
+    .price-cards{display:grid;grid-template-columns:1fr 1fr;gap:26px;max-width:820px;margin:0 auto 46px}
+    .pcard{border:1px solid var(--line);background:#fff;text-align:center;position:relative;overflow:hidden}
+    .pcard .p-head{background:var(--black);color:var(--cream);padding:13px;font-family:var(--serif);font-size:14.5px;letter-spacing:.16em}
+    .pcard.featured{border-color:var(--gold);box-shadow:0 18px 44px rgba(217,173,82,.22)}
+    .pcard.featured .p-head{background:linear-gradient(120deg,var(--gold-light),var(--gold));color:var(--black)}
+    .pcard .p-body{padding:30px 22px}
+    .pcard .was{color:var(--gray);font-size:13.5px;text-decoration:line-through}
+    .pcard .now{font-family:var(--serif);font-size:46px;color:var(--gold-deep);line-height:1.3}
+    .pcard .now small{font-size:17px}
+    .pcard .desc{margin-top:12px;font-size:12.5px;color:var(--gray);line-height:1.9}
+    .p-ribbon{position:absolute;top:16px;right:-36px;transform:rotate(35deg);background:var(--black);color:var(--gold-light);font-size:10.5px;font-weight:700;letter-spacing:.14em;padding:5px 42px}
+    /* 店舗カードのメタ */
+    .shop-block{margin-bottom:52px}
+    .shop-block:last-child{margin-bottom:0}
+    .shop-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:16px;margin-bottom:18px}
+    .shop-head h3{font-size:clamp(22px,3vw,30px)}
+    .shop-head .rating{font-size:12.5px;color:var(--gray)}
+    .shop-head .rating b{font-family:var(--serif);font-size:18px;color:var(--gold-deep)}
+    .shop-head .rating .stars{color:var(--gold);letter-spacing:2px;margin-right:6px}
+    .shop-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+    .shop-btns .btn{padding:13px 26px;font-size:13.5px}
+    @media(max-width:960px){
+      .reason-grid,.price-cards{grid-template-columns:1fr}
+    }
+
+    /* ===== B案の雰囲気への調整：黒×赤×金のダーク予約特化（構造・書体は本命のまま） ===== */
+    :root{
+      --gold:#d6202f;             /* 主役色＝赤（CTA・強調） */
+      --gold-light:#ff6b74;
+      --gold-deep:#b3121f;
+    }
+    .btn-gold,.global-nav .nav-cta,.reserve-button{color:#fff}
+    .btn-gold{box-shadow:0 12px 30px rgba(214,32,47,.4)}
+    .btn-gold:hover{box-shadow:0 16px 38px rgba(214,32,47,.55)}
+    .reserve-button{box-shadow:0 16px 40px rgba(214,32,47,.35)}
+    /* 金は「効かせ役」に残す：帯・キッカー・リボン・星 */
+    .marquee{color:#d9ad52}
+    .hero-kicker{color:#d9ad52}
+    .hero-kicker::before{background:#d9ad52}
+    .p-ribbon{background:linear-gradient(120deg,#f0d58e,#d9ad52);color:#0b0a08}
+    .pcard.featured{box-shadow:0 18px 44px rgba(214,32,47,.2)}
+    .pcard.featured .p-head{color:#fff}
+    .shop-head .rating .stars{color:#e8b64c}
+    .recruit-band{background:linear-gradient(120deg,#e8404e,var(--gold) 55%,var(--gold-deep));color:#fff}
+    .recruit-band .eyebrow{color:rgba(255,255,255,.85)}
+    .recruit-band .eyebrow::before{background:#fff}
+    .recruit-band h2{color:#fff}
+    .recruit-band p{color:rgba(255,255,255,.88)}
+    .recruit-band .btn{background:#0b0a08;color:#fff}
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main">本文へ移動</a>
+
+<header class="site-header" data-header>
+  <a class="brand" href="#top" aria-label="全力ストレッチ トップ">
+    <svg class="brand-mark" viewBox="0 0 124 78" aria-hidden="true">
+      <path d="M4 7H60L5 57H60V7L118 57V7"></path>
+      <text class="brand-mark-word" x="61" y="74" text-anchor="middle">ZENRYOKU STRETCH</text>
+    </svg>
+    <span class="brand-copy">
+      <strong>全力ストレッチ</strong>
+      <small>OMIYA EAST / AKABANE</small>
+    </span>
+  </a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="global-nav" data-menu-toggle>
+    <span></span><span></span>
+    <span class="sr-only">メニューを開く</span>
+  </button>
+  <nav class="global-nav" id="global-nav" aria-label="メインメニュー" data-nav>
+    <a href="#method">全力ストレッチとは</a>
+    <a href="#price">メニュー・料金</a>
+    <a href="#shops">店舗案内</a>
+    <a href="#recruit">採用情報</a>
+    <a href="#faq">よくある質問</a>
+    <a class="nav-cta" href="#shops">WEB予約</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ヒーロー -->
+  <section class="hero" id="top" style="padding:0">
+    <div class="hero-media" aria-hidden="true">
+      <img src="site/assets/images/omiya-campaign.jpg" alt="" width="1600" height="994">
+    </div>
+    <p class="hero-watermark" aria-hidden="true">全力</p>
+    <div class="hero-inner">
+      <p class="hero-kicker">Saurus Method — 体幹軸調整 × 全身もみほぐし</p>
+      <h1 class="reveal">
+        <small>OMIYA EAST ▪ AKABANE</small>
+        痛気持ちイイ〜が、<br><em>癖になる。</em>
+      </h1>
+      <p class="hero-lead reveal">メディア出演多数。女性トレーナーがマンツーマンで、凝り固まった筋肉をほぐし、伸ばす。<br><strong>芸能人も通う"ストレッチエンターテイメント"を、大宮と赤羽で。</strong></p>
+      <div class="hero-actions reveal">
+        <a class="btn btn-gold" href="https://beauty.hotpepper.jp/kr/slnH000693679/" target="_blank" rel="noopener">大宮東口店を予約する</a>
+        <a class="btn btn-outline on-dark" href="https://beauty.hotpepper.jp/kr/slnH000744509/" target="_blank" rel="noopener">赤羽店を予約する</a>
+      </div>
+      <div class="hero-badges reveal">
+        <div class="badge"><span class="num">4.66<small>/5.0・口コミ207件</small></span><span class="src">大宮東口店｜ホットペッパービューティー</span></div>
+        <div class="badge"><span class="num">4.69<small>/5.0・口コミ31件</small></span><span class="src">赤羽店｜ホットペッパービューティー</span></div>
+        <div class="badge"><span class="num">93<small>% リピート率</small></span><span class="src">全国70店舗の全力ストレッチブランド</span></div>
+      </div>
+      <p class="reveal" style="margin-top:18px;font-size:12px;color:rgba(243,239,230,.6)">完全予約制｜夜22時まで営業｜初回60分 ¥4,900〜</p>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>ほぐす — 伸ばす — 軸から整える ✦ ZENRYOKU STRETCH ✦ 大宮東口店 ✦ 赤羽店 ✦ 完全個室 ✦ マンツーマン ✦&nbsp;</span>
+      <span>ほぐす — 伸ばす — 軸から整える ✦ ZENRYOKU STRETCH ✦ 大宮東口店 ✦ 赤羽店 ✦ 完全個室 ✦ マンツーマン ✦&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- 課題提起 -->
+  <section class="center" id="trouble" style="background:#fff">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow" style="justify-content:center">Your Trouble</p>
+        <h2 class="sec-title">そのつらさ、放っておいていませんか？</h2>
+      </div>
+      <div class="chips reveal">
+        <span class="chip">慢性的な肩こり・首こり</span>
+        <span class="chip">デスクワークの腰痛</span>
+        <span class="chip">猫背・姿勢の崩れ</span>
+        <span class="chip">脚のむくみ・冷え</span>
+        <span class="chip">眼精疲労・頭痛</span>
+        <span class="chip">運動不足・カラダの硬さ</span>
+        <span class="chip">マッサージでは物足りない</span>
+        <span class="chip">睡眠の質が上がらない</span>
+      </div>
+      <p class="worry-closing reveal">ひとつでも当てはまるなら——<br>もみほぐしだけで終わらせない<em>「ほぐして、伸ばす」</em>を体験してください。</p>
+    </div>
+  </section>
+
+  <!-- ザウルス式（メソッド） -->
+  <section class="method-section" id="method">
+    <p class="method-watermark" aria-hidden="true">体幹軸調整法</p>
+    <div class="container">
+      <div class="split reverse">
+        <div class="split-media reveal">
+          <img src="site/assets/images/omiya-staff.jpg" alt="女性トレーナーによるマンツーマンのストレッチ施術" loading="lazy" width="985" height="948">
+          <span class="frame-line" aria-hidden="true"></span>
+          <span class="img-label">SAURUS METHOD</span>
+        </div>
+        <div class="split-copy">
+          <p class="eyebrow on-dark reveal">Saurus Method</p>
+          <h2 class="reveal" style="color:var(--cream)">ザウルス式・<br>体幹軸調整ストレッチ</h2>
+          <p class="reveal" style="margin-top:16px;color:rgba(243,239,230,.7);font-size:13.5px">元格闘家オーナー・阿佐美ザウルスが、スポーツトレーニングとタイ古式マッサージの知見から編み出した、美しく強いカラダをつくる独自メソッド</p>
+          <ol class="method-steps">
+            <li class="reveal"><span class="num">01</span><div><h3>もみほぐしで表層筋を緩める</h3><p>まずは全身マッサージで表面の筋肉をゆるめます。うつ伏せ・仰向け・横向きの3方向から「痛気持ちイイ」絶妙な強圧でアプローチ。筋断裂などを防ぐための大切な下準備でもあります。</p></div></li>
+            <li class="reveal"><span class="num">02</span><div><h3>ストレッチで深層筋まで伸ばす</h3><p>表層筋がほぐれることで、コリや痛みの根本原因である骨に近い深層筋までしっかり伸びる——このWアプローチが効果を最大化。自分では伸ばせない深部まで、可動域を一気に広げます。</p></div></li>
+            <li class="reveal"><span class="num">03</span><div><h3>美姿勢をつくる「4つの軸」を整える</h3><p>首・肩周り（肩甲骨）／横隔膜（呼吸）／骨盤（腰痛・体幹）／足の重心（姿勢の土台）。全身バランスを整えるから、施術後は「立ってるだけでラク！」という声も。</p></div></li>
+          </ol>
+          <p class="reveal" style="margin-top:26px;font-size:13px;color:rgba(243,239,230,.7)">全力ストレッチは全国70店舗を展開する、リピート率93%のストレッチ専門ブランド。<strong style="color:var(--gold-light)">「ほぐす×伸ばす×整える」</strong>の3段構えは、通常のもみほぐし店ともストレッチ専門店とも違う、全力ストレッチだけの体験です。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 選ばれる理由 -->
+  <section class="trainer-section" id="reason">
+    <div class="container">
+      <div class="sec-head reveal" style="text-align:center">
+        <p class="eyebrow" style="justify-content:center">Reason</p>
+        <h2 class="sec-title">全力ストレッチが選ばれる4つの理由</h2>
+      </div>
+      <div class="reason-grid">
+        <div class="reason reveal">
+          <span class="ic">🚪</span>
+          <div><h3>完全予約制・高級感ある個室</h3><p>清潔感のある落ち着いた個室で、まわりを気にせず施術に集中。上質な空間でのおもてなしにこだわっています。</p></div>
+        </div>
+        <div class="reason reveal">
+          <span class="ic">💪</span>
+          <div><h3>女性トレーナーによるマンツーマン</h3><p>専門の知識と資格を持つ女性トレーナーが、あなたの状態に合わせたオーダーメイド施術。お客様はベッドに寝ているだけでOKです。</p></div>
+        </div>
+        <div class="reason reveal">
+          <span class="ic">🌙</span>
+          <div><h3>夜22時まで・駅チカで通いやすい</h3><p>大宮駅東口 徒歩6分、赤羽駅 徒歩4分。営業は毎日10:00〜22:00で、仕事帰りでも通えます。年中無休（不定休）。</p></div>
+        </div>
+        <div class="reason reveal">
+          <span class="ic">🏆</span>
+          <div><h3>リピート率93%・全国70店舗の実績</h3><p>「体がカチッと元の位置に戻った」「悩みに本気で向き合ってくれる」の声多数。デスクワークの方からゴルフなどスポーツをする方まで幅広く通われています。</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 料金 -->
+  <section class="center" id="price" style="background:#fff">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow" style="justify-content:center">Price</p>
+        <h2 class="sec-title">メニュー・料金</h2>
+        <p class="sec-lead" style="margin-left:auto;margin-right:auto">まずは初回体験から。カラダの変化を実感してください。</p>
+      </div>
+      <div class="price-cards reveal">
+        <div class="pcard">
+          <div class="p-head">初回限定｜60分コース</div>
+          <div class="p-body">
+            <p class="was">通常 ¥13,200</p>
+            <p class="now"><small>¥</small>4,900</p>
+            <p class="desc">全身もみほぐし＆ストレッチの基本コース。<br>まず試してみたい方に。</p>
+          </div>
+        </div>
+        <div class="pcard featured">
+          <span class="p-ribbon">おすすめ</span>
+          <div class="p-head">初回限定｜90分コース</div>
+          <div class="p-body">
+            <p class="was">通常 ¥19,800</p>
+            <p class="now"><small>¥</small>6,900</p>
+            <p class="desc">もみほぐし＋ストレッチをじっくり全身に。<br>変化を最大限に実感したい方に。</p>
+          </div>
+        </div>
+      </div>
+      <div class="price-table reveal">
+        <div class="price-row">
+          <div><span>Standard</span><strong>全身もみほぐし＆ストレッチ 60分</strong></div>
+          <p><small>税込</small>¥13,200</p>
+        </div>
+        <div class="price-row">
+          <div><span>Deep</span><strong>全身もみほぐし＆ストレッチ 90分</strong></div>
+          <p><small>税込</small>¥19,800</p>
+        </div>
+        <div class="price-row">
+          <div><span>Trainer</span><strong>トレーナー指名料</strong></div>
+          <p><small>税込</small>¥3,300</p>
+        </div>
+      </div>
+      <p class="price-note reveal">※料金・キャンペーン内容は時期により変わります。最新の料金はご予約ページでご確認ください。<br>※会員制ですが入会金・会費は無料。会員様価格のお得なチケットをご用意しています（非会員様の都度利用も可能）。</p>
+    </div>
+  </section>
+
+  <!-- 店舗案内 -->
+  <section class="store-access" id="shops">
+    <div class="container" style="max-width:880px">
+      <div class="sec-head reveal" style="text-align:center">
+        <p class="eyebrow" style="justify-content:center">Shop</p>
+        <h2 class="sec-title">店舗案内</h2>
+        <p class="sec-lead" style="margin-left:auto;margin-right:auto">大宮と赤羽、どちらも駅から歩いてすぐ。通いやすい方をお選びください。</p>
+      </div>
+
+      <div class="shop-block reveal">
+        <div class="shop-head">
+          <h3>大宮東口店</h3>
+          <span class="rating"><span class="stars">★★★★★</span><b>4.66</b>（口コミ207件）</span>
+        </div>
+        <dl class="access-list">
+          <div><dt>ADDRESS</dt><dd>埼玉県さいたま市大宮区大門町3-59 小沢ビル3F</dd></div>
+          <div><dt>ACCESS</dt><dd>JR大宮駅 東口より徒歩6分</dd></div>
+          <div><dt>HOURS</dt><dd>10:00〜22:00（夜20時以降の受付も可）／不定休（年中無休）</dd></div>
+          <div><dt>PAYMENT</dt><dd>各種クレジットカード／PayPay／QUICPay／交通系IC</dd></div>
+          <div><dt>PARKING</dt><dd>近隣のコインパーキングをご利用ください</dd></div>
+          <div><dt>TRAINER</dt><dd>MOMOKA・SHIHO・YUUKI・SAKURA・MERU・KANAE</dd></div>
+        </dl>
+        <div class="shop-btns">
+          <a class="btn btn-gold" href="https://beauty.hotpepper.jp/kr/slnH000693679/" target="_blank" rel="noopener">WEB予約（ホットペッパー）</a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=埼玉県さいたま市大宮区大門町3-59+小沢ビル" target="_blank" rel="noopener">Googleマップで見る</a>
+          <a class="btn btn-outline" href="https://www.instagram.com/zenryoku.omiyaeast/" target="_blank" rel="noopener">Instagram @zenryoku.omiyaeast</a>
+        </div>
+      </div>
+
+      <div class="shop-block reveal">
+        <div class="shop-head">
+          <h3>赤羽店</h3>
+          <span class="rating"><span class="stars">★★★★★</span><b>4.69</b>（口コミ31件）</span>
+        </div>
+        <dl class="access-list">
+          <div><dt>ADDRESS</dt><dd>東京都北区赤羽2-17-7 プライム赤羽4F</dd></div>
+          <div><dt>ACCESS</dt><dd>JR赤羽駅 東口より徒歩4分</dd></div>
+          <div><dt>HOURS</dt><dd>10:00〜22:00／不定休</dd></div>
+          <div><dt>PAYMENT</dt><dd>各種クレジットカード／QR決済／交通系IC</dd></div>
+          <div><dt>PARKING</dt><dd>コインパーキングあり</dd></div>
+          <div><dt>TRAINER</dt><dd>MOMOKA・SUZUKA・KANADE・NAO・NARUMI・SHIHO・YUUKI・MERU</dd></div>
+        </dl>
+        <div class="shop-btns">
+          <a class="btn btn-gold" href="https://beauty.hotpepper.jp/kr/slnH000744509/" target="_blank" rel="noopener">WEB予約（ホットペッパー）</a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=東京都北区赤羽2-17-7+プライム赤羽" target="_blank" rel="noopener">Googleマップで見る</a>
+          <a class="btn btn-outline" href="https://www.instagram.com/zenryoku.akabane/" target="_blank" rel="noopener">Instagram @zenryoku.akabane</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SNS -->
+  <section class="social-section" id="sns">
+    <div class="container">
+      <div class="social-grid">
+        <div class="reveal">
+          <p class="eyebrow on-dark">Follow Us</p>
+          <h2 class="sec-title" style="color:var(--cream)">SNSで"動き"を<br>見てください。</h2>
+          <p class="sec-lead" style="color:rgba(243,239,230,.7)">施術の様子、自宅でできるセルフストレッチ、店舗の日常を発信中。</p>
+        </div>
+        <div class="social-links">
+          <a class="social-card reveal" href="https://www.instagram.com/zenryoku.omiyaeast/" target="_blank" rel="noopener">
+            <span>INSTAGRAM</span><strong>大宮東口店</strong><em>@zenryoku.omiyaeast ↗</em>
+          </a>
+          <a class="social-card reveal" href="https://www.instagram.com/zenryoku.akabane/" target="_blank" rel="noopener">
+            <span>INSTAGRAM</span><strong>赤羽店</strong><em>@zenryoku.akabane ↗</em>
+          </a>
+          <a class="social-card reveal" href="https://www.tiktok.com/@zenryoku.omiyae_akabane" target="_blank" rel="noopener">
+            <span>TIKTOK</span><strong>2店舗共通ショート動画</strong><em>@zenryoku.omiyae_akabane ↗</em>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 採用（感情ピーク帯） -->
+  <div class="recruit-band" id="recruit">
+    <div class="container">
+      <p class="eyebrow reveal">Recruit</p>
+      <h2 class="reveal">一緒に「全力」で働く<br>トレーナーを募集しています</h2>
+      <p class="reveal">未経験からでも、研修でザウルス式体幹軸調整を身につけられます。人のカラダと向き合う仕事がしたい方、手に職をつけたい方。まずは店舗の雰囲気を見に来てください。</p>
+      <a class="btn reveal" href="https://www.instagram.com/zenryoku.omiyaeast/" target="_blank" rel="noopener">採用について問い合わせる ↗</a>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <section class="center" id="faq" style="background:#fff">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow" style="justify-content:center">FAQ</p>
+        <h2 class="sec-title">よくある質問</h2>
+      </div>
+      <div class="faq-list">
+        <details class="reveal"><summary>どんな服装で行けばいいですか？</summary><p>お着替え・タオル・飲料のご用意がありますので、手ぶらでお越しいただけます。お仕事帰りのスーツのままでも大丈夫です。</p></details>
+        <details class="reveal"><summary>ストレッチは痛くないですか？</summary><p>「痛気持ちイイ」と感じる絶妙な強さを、お客様と会話しながら調整します。強圧が好みの方にも、初めての方にも合わせられますのでご安心ください。</p></details>
+        <details class="reveal"><summary>男性でも女性でも利用できますか？</summary><p>はい、どちらのお客様も多くご利用いただいています。施術は完全個室で、女性トレーナーがマンツーマンで担当します。</p></details>
+        <details class="reveal"><summary>入会金や会費はかかりますか？</summary><p>会員制ですが、入会金・会費は無料です。会員になると会員様価格のお得なチケットをご利用いただけます。非会員のままの都度利用も可能です。</p></details>
+        <details class="reveal"><summary>スポーツをしていなくても大丈夫？</summary><p>もちろんです。デスクワークの肩こり・腰痛の方が多く通われています。一方で柔軟性を上げたいスポーツをされる方（特にゴルフ）にもおすすめで、飛距離が伸びたという声もあります。</p></details>
+        <details class="reveal"><summary>予約は必要ですか？</summary><p>完全予約制です。ホットペッパービューティーのWEB予約が24時間ご利用いただけます。当日予約も空きがあれば可能です。</p></details>
+        <details class="reveal"><summary>どのくらいのペースで通えばいいですか？</summary><p>カラダの状態によりますが、最初は週1回程度、状態が安定してきたら2〜3週間に1回のメンテナンスをおすすめしています。トレーナーがあなたに合ったペースをご提案します。</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 予約クロージング -->
+  <section class="reserve-section">
+    <div class="container reserve-inner reveal">
+      <p class="eyebrow on-dark" style="justify-content:center">Reservation</p>
+      <h2>さあ、<em style="font-style:normal;color:var(--gold-light)">全力</em>で整えにいこう。</h2>
+      <div class="reserve-buttons">
+        <a class="reserve-button" href="https://beauty.hotpepper.jp/kr/slnH000693679/" target="_blank" rel="noopener">
+          <small>大宮東口店・初回60分 ¥4,900〜</small>
+          <strong>空き状況を見て予約する ↗</strong>
+        </a>
+        <a class="reserve-button" href="https://beauty.hotpepper.jp/kr/slnH000744509/" target="_blank" rel="noopener">
+          <small>赤羽店・初回60分 ¥4,900〜</small>
+          <strong>空き状況を見て予約する ↗</strong>
+        </a>
+      </div>
+      <p class="reserve-tel">初回60分 ¥4,900〜｜完全予約制・夜22時まで</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <svg class="brand-mark" viewBox="0 0 124 78" aria-hidden="true" style="width:56px">
+          <path d="M4 7H60L5 57H60V7L118 57V7"></path>
+          <text class="brand-mark-word" x="61" y="74" text-anchor="middle">ZENRYOKU STRETCH</text>
+        </svg>
+        <strong>全力ストレッチ 大宮東口店・赤羽店</strong>
+      </div>
+      <div class="footer-shops">
+        <p>大宮東口店｜埼玉県さいたま市大宮区大門町3-59 小沢ビル3F</p>
+        <p>赤羽店｜東京都北区赤羽2-17-7 プライム赤羽4F</p>
+      </div>
+    </div>
+    <div class="mock-note">【提案用モック（B案・予約特化LP）】本サイトはHP制作のご提案用サンプルです。掲載している料金・口コミ件数・店舗情報・トレーナー名は2026年7月時点の公式サイト（zn-stretch.com）およびホットペッパービューティーの公開情報に基づく仮置きであり、正式公開時にはオーナー様確認のうえ差し替えます。リピート率93%は全力ストレッチ公式サイトの公表値です。</div>
+    <p class="copyright">© 2026 ZENRYOKU STRETCH OMIYA EAST / AKABANE</p>
+  </div>
+</footer>
+
+</body>
+</html>
