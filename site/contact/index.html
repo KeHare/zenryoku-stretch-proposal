@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ｜全力ストレッチ 大宮東口店・赤羽店</title>
+  <meta name="description" content="全力ストレッチ 大宮東口店・赤羽店へのお問い合わせ。求人への応募、メディア出演のご依頼、その他のご連絡はこちらから。施術のご予約はWEB予約をご利用ください。">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0b0a08">
+  <meta property="og:title" content="お問い合わせ｜全力ストレッチ 大宮東口店・赤羽店">
+  <meta property="og:description" content="求人への応募・メディア出演のご依頼・その他のご連絡はこちらから。">
+  <meta property="og:image" content="https://kehare.github.io/zenryoku-stretch-hp/assets/images/omiya-campaign.jpg">
+  <meta property="og:url" content="https://kehare.github.io/zenryoku-stretch-hp/contact/">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="../assets/zenryoku-logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/site.css">
+  <script src="../assets/site.js" defer></script>
+  <style>
+    /* ===== お問い合わせページ専用（本命と同じ黒×金×クリームの言語） ===== */
+    .contact-hero{background:var(--black);color:var(--cream);padding:150px 0 70px;position:relative;overflow:hidden}
+    .contact-hero::after{content:"CONTACT";position:absolute;right:-1%;bottom:-14%;font-family:var(--serif);font-size:min(16vw,170px);color:rgba(243,239,230,.045);letter-spacing:.08em;pointer-events:none;line-height:1}
+    .contact-hero h1{font-size:clamp(30px,4.6vw,48px)}
+    .contact-hero .lead{margin-top:16px;font-size:14.5px;color:rgba(243,239,230,.75);max-width:38em}
+    .reserve-note{margin-top:26px;display:inline-flex;flex-wrap:wrap;align-items:center;gap:14px;border:1px solid var(--line-light);padding:14px 20px;font-size:13px;color:rgba(243,239,230,.85)}
+    .reserve-note a{color:var(--gold-light);font-weight:700;border-bottom:1px solid var(--gold)}
+    /* カテゴリカード */
+    .type-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:46px}
+    .type-card{padding:26px 22px;text-align:left;background:#fff;border:1px solid var(--line);cursor:pointer;font-family:var(--sans);transition:all .3s var(--ease)}
+    .type-card:hover{border-color:var(--gold);transform:translateY(-2px)}
+    .type-card.selected{background:var(--black);border-color:var(--black);color:var(--cream);box-shadow:0 16px 40px rgba(11,10,8,.25)}
+    .type-card .t-en{display:block;font-size:10px;font-weight:700;letter-spacing:.3em;color:var(--gold-deep);text-transform:uppercase;margin-bottom:8px}
+    .type-card.selected .t-en{color:var(--gold-light)}
+    .type-card .t-name{display:block;font-family:var(--serif);font-size:18px;font-weight:600;letter-spacing:.06em}
+    .type-card .t-desc{display:block;margin-top:6px;font-size:11.5px;color:var(--gray);line-height:1.7}
+    .type-card.selected .t-desc{color:rgba(243,239,230,.65)}
+    /* フォーム */
+    .form-wrap{max-width:720px;margin:0 auto}
+    .form-card{background:#fff;border:1px solid var(--line);padding:36px}
+    .form-card .form-head{font-family:var(--serif);font-size:17px;letter-spacing:.08em;margin-bottom:6px}
+    .form-card .form-head::before{content:"— ";color:var(--gold)}
+    .form-note{font-size:11.5px;color:var(--gray);margin-bottom:24px}
+    .form-restore{display:none;font-size:12.5px;font-weight:700;color:var(--gold-deep);margin-bottom:16px}
+    .form-restore.show{display:block}
+    .form-row{margin-bottom:20px}
+    .form-row label{display:block;font-size:12.5px;font-weight:700;letter-spacing:.06em;margin-bottom:8px}
+    .form-row label .req{color:var(--gold-deep);font-size:10px;margin-left:8px;border:1px solid rgba(217,173,82,.6);padding:1px 8px;vertical-align:1px}
+    .form-row label .opt{color:var(--gray);font-size:10px;margin-left:8px;border:1px solid var(--line);padding:1px 8px;vertical-align:1px}
+    .form-row input[type="text"],.form-row input[type="email"],.form-row input[type="tel"],.form-row textarea{width:100%;padding:14px 16px;font-size:15px;font-family:var(--sans);border:1px solid var(--line);background:var(--paper);outline:none;transition:border-color .2s}
+    .form-row input:focus,.form-row textarea:focus{border-color:var(--gold)}
+    .form-row textarea{min-height:150px;resize:vertical}
+    .radio-pills{display:flex;flex-wrap:wrap;gap:10px}
+    .radio-pills label{display:flex;align-items:center;gap:8px;margin:0;padding:11px 20px;border:1px solid var(--line);cursor:pointer;font-size:13.5px;font-weight:700;transition:.25s;background:var(--paper)}
+    .radio-pills label:hover{border-color:var(--gold)}
+    .radio-pills input{accent-color:var(--gold-deep)}
+    .radio-pills label:has(input:checked){background:var(--black);color:var(--cream);border-color:var(--black)}
+    .field-group{display:none}
+    .field-group.active{display:block}
+    .submit-btn{width:100%;margin-top:6px}
+    .privacy-note{margin-top:16px;font-size:11px;color:var(--gray);line-height:1.9}
+    /* 送信結果 */
+    .form-result{display:none;text-align:center;padding:60px 24px}
+    .form-result.show{display:block}
+    .form-result .mark{font-family:var(--serif);font-size:44px;color:var(--gold-deep);line-height:1}
+    .form-result h2{font-size:24px;margin:18px 0 10px}
+    .form-result p{font-size:14px;color:var(--gray)}
+    .form-error{display:none;margin-top:18px;padding:16px 20px;border:1px solid rgba(214,32,47,.4);background:rgba(214,32,47,.06);font-size:13px;line-height:1.9;color:var(--ink)}
+    .form-error.show{display:block}
+    .form-error a{font-weight:700;border-bottom:1px solid var(--gold);color:var(--gold-deep)}
+    @media(max-width:820px){
+      .type-cards{grid-template-columns:1fr}
+      .form-card{padding:26px 20px}
+      .contact-hero{padding:120px 0 56px}
+    }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main">本文へ移動</a>
+
+<header class="site-header" data-header>
+  <a class="brand" href="../index.html" aria-label="全力ストレッチ トップへ戻る">
+    <svg class="brand-mark" viewBox="0 0 124 78" aria-hidden="true">
+      <path d="M4 7H60L5 57H60V7L118 57V7"></path>
+      <text class="brand-mark-word" x="61" y="74" text-anchor="middle">ZENRYOKU STRETCH</text>
+    </svg>
+    <span class="brand-copy">
+      <strong>全力ストレッチ</strong>
+      <small>OMIYA EAST / AKABANE</small>
+    </span>
+  </a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="global-nav" data-menu-toggle>
+    <span></span><span></span>
+    <span class="sr-only">メニューを開く</span>
+  </button>
+  <nav class="global-nav" id="global-nav" aria-label="メインメニュー" data-nav>
+    <a href="../index.html">サイトトップ</a>
+    <a href="../omiya/index.html">大宮東口店</a>
+    <a href="../akabane/index.html">赤羽店</a>
+    <a class="nav-cta" href="../index.html#stores">WEB予約</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <div class="contact-hero">
+    <div class="container">
+      <p class="eyebrow on-dark">Contact</p>
+      <h1>お問い合わせ</h1>
+      <p class="lead">求人への応募、メディア出演のご依頼、その他のご連絡はこちらのフォームからどうぞ。内容に応じて担当より折り返しご連絡します。</p>
+      <p class="reserve-note">施術のご予約はフォームではなく、24時間受付のWEB予約をご利用ください　<a href="https://beauty.hotpepper.jp/kr/slnH000693679/coupon/" target="_blank" rel="noopener noreferrer">大宮東口店</a>　<a href="https://beauty.hotpepper.jp/kr/slnH000744509/coupon/" target="_blank" rel="noopener noreferrer">赤羽店</a></p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container form-wrap">
+
+      <div id="formArea">
+        <div class="sec-head" style="margin-bottom:34px">
+          <p class="eyebrow">Step 1</p>
+          <h2 class="sec-title" style="font-size:clamp(22px,3.4vw,30px)">ご用件をお選びください</h2>
+        </div>
+
+        <div class="type-cards" id="typeCards">
+          <button type="button" class="type-card" data-type="recruit">
+            <span class="t-en">Recruit</span>
+            <span class="t-name">求人への応募</span>
+            <span class="t-desc">トレーナー職への応募・応募前の質問。未経験の方もまずはこちらから。</span>
+          </button>
+          <button type="button" class="type-card" data-type="media">
+            <span class="t-en">Media</span>
+            <span class="t-name">メディア出演依頼</span>
+            <span class="t-desc">テレビ・雑誌・WEB媒体・SNS企画などの出演・取材のご依頼。</span>
+          </button>
+          <button type="button" class="type-card" data-type="other">
+            <span class="t-en">Other</span>
+            <span class="t-name">その他</span>
+            <span class="t-desc">上記以外のご連絡・ご相談はこちらへ。</span>
+          </button>
+        </div>
+
+        <form class="form-card" id="contactForm" style="display:none">
+          <p class="form-head" id="formTitle">おうかがいします</p>
+          <p class="form-note">入力内容はこの端末に自動保存されます。途中でページを閉じても、次に開いたとき続きから書けます。</p>
+          <p class="form-restore" id="formRestoreNote">前回の入力内容を復元しました。</p>
+
+          <div class="form-row">
+            <label for="f-name">お名前<span class="req">必須</span></label>
+            <input type="text" id="f-name" name="name" autocomplete="name" required>
+          </div>
+          <div class="form-row">
+            <label for="f-email">メールアドレス<span class="req">必須</span></label>
+            <input type="email" id="f-email" name="email" autocomplete="email" required>
+          </div>
+          <div class="form-row">
+            <label for="f-tel">電話番号<span class="opt">任意</span></label>
+            <input type="tel" id="f-tel" name="tel" autocomplete="tel">
+          </div>
+
+          <!-- 求人のみ -->
+          <div class="field-group" data-for="recruit">
+            <div class="form-row">
+              <label>希望店舗<span class="req">必須</span></label>
+              <div class="radio-pills">
+                <label><input type="radio" name="shop" value="大宮東口店">大宮東口店</label>
+                <label><input type="radio" name="shop" value="赤羽店">赤羽店</label>
+                <label><input type="radio" name="shop" value="どちらでも">どちらでも</label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label>トレーナー経験<span class="req">必須</span></label>
+              <div class="radio-pills">
+                <label><input type="radio" name="exp" value="未経験">未経験</label>
+                <label><input type="radio" name="exp" value="経験あり">経験あり</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- メディアのみ -->
+          <div class="field-group" data-for="media">
+            <div class="form-row">
+              <label for="f-media">媒体・番組名<span class="req">必須</span></label>
+              <input type="text" id="f-media" name="media" placeholder="例：〇〇テレビ「〇〇〇」／WEBメディア〇〇">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="f-message" id="messageLabel">内容<span class="req" id="messageReq">必須</span></label>
+            <textarea id="f-message" name="message" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-gold submit-btn" id="submitBtn">この内容で送信する</button>
+          <div class="form-error" id="formError">
+            送信できませんでした。お手数ですが時間をおいて再度お試しいただくか、
+            各店舗のInstagram（<a href="https://www.instagram.com/zenryoku.omiyaeast/" target="_blank" rel="noopener noreferrer">大宮東口店</a>／<a href="https://www.instagram.com/zenryoku.akabane/" target="_blank" rel="noopener noreferrer">赤羽店</a>）のDMからご連絡ください。
+            <strong>入力いただいた内容はこの端末に保存されており、消えていません。</strong>
+          </div>
+          <p class="privacy-note">送信いただいた内容は、お問い合わせへの対応のみに使用します。</p>
+        </form>
+      </div>
+
+      <div class="form-result" id="formResult">
+        <p class="mark">✦</p>
+        <h2>送信しました</h2>
+        <p>お問い合わせありがとうございます。内容を確認のうえ、担当より折り返しご連絡いたします。</p>
+        <p style="margin-top:26px"><a class="btn btn-outline" href="../index.html">サイトトップへ戻る</a></p>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <svg class="brand-mark" viewBox="0 0 124 78" aria-hidden="true" style="width:56px">
+          <path d="M4 7H60L5 57H60V7L118 57V7"></path>
+          <text class="brand-mark-word" x="61" y="74" text-anchor="middle">ZENRYOKU STRETCH</text>
+        </svg>
+        <strong>全力ストレッチ 大宮東口店・赤羽店</strong>
+      </div>
+      <div class="footer-shops">
+        <p>大宮東口店｜埼玉県さいたま市大宮区大門町3-59 小沢ビル3F｜<a href="tel:048-606-3412">048-606-3412</a></p>
+        <p>赤羽店｜東京都北区赤羽2-17-7 プライム赤羽4F｜<a href="tel:090-9710-1059">090-9710-1059</a></p>
+      </div>
+    </div>
+    <div class="mock-note">【提案用モック】本サイトはHP制作のご提案用サンプルです。掲載情報は2026年7月時点の公開情報に基づく仮置きです。</div>
+    <p class="copyright">© 2026 ZENRYOKU STRETCH OMIYA EAST / AKABANE</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ============================================================
+     送信先設定：GoogleフォームのformResponse URLと各項目のentry ID。
+     未設定（ACTION空）の間は送信時に案内を出し、入力は保持される。
+     ============================================================ */
+  var CONFIG = {
+    ACTION: '',            /* 例 https://docs.google.com/forms/d/e/xxxx/formResponse */
+    ENTRY: {
+      type: '',            /* お問い合わせ種別 */
+      name: '',
+      email: '',
+      tel: '',
+      shop: '',
+      exp: '',
+      media: '',
+      message: ''
+    }
+  };
+
+  var TYPE_LABELS = { recruit: '求人への応募', media: 'メディア出演依頼', other: 'その他' };
+  var FORM_TITLES = {
+    recruit: '求人への応募について',
+    media: 'メディア出演のご依頼について',
+    other: 'お問い合わせ内容'
+  };
+  var MESSAGE_LABELS = {
+    recruit: 'ひとこと（質問・自己紹介など）',
+    media: '企画概要・希望時期',
+    other: '内容'
+  };
+  var MESSAGE_REQUIRED = { recruit: false, media: true, other: true };
+
+  var STORE_KEY = 'zenryoku_contact_draft_v1';
+  var currentType = null;
+
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.type-card'));
+  var form = document.getElementById('contactForm');
+  var groups = Array.prototype.slice.call(document.querySelectorAll('.field-group'));
+  var msgInput = document.getElementById('f-message');
+  var fields = Array.prototype.slice.call(form.querySelectorAll('input, textarea'));
+
+  function setType(type, scroll) {
+    currentType = type;
+    cards.forEach(function (c) { c.classList.toggle('selected', c.getAttribute('data-type') === type); });
+    groups.forEach(function (g) {
+      var active = g.getAttribute('data-for') === type;
+      g.classList.toggle('active', active);
+      /* 非表示グループのrequiredを外す（表示中のみ必須にする） */
+      Array.prototype.forEach.call(g.querySelectorAll('input'), function (inp) {
+        if (inp.type === 'radio' || inp.type === 'text') inp.required = active;
+      });
+    });
+    document.getElementById('formTitle').textContent = FORM_TITLES[type];
+    document.getElementById('messageLabel').childNodes[0].textContent = MESSAGE_LABELS[type];
+    var reqBadge = document.getElementById('messageReq');
+    msgInput.required = MESSAGE_REQUIRED[type];
+    reqBadge.textContent = MESSAGE_REQUIRED[type] ? '必須' : '任意';
+    reqBadge.className = MESSAGE_REQUIRED[type] ? 'req' : 'opt';
+    form.style.display = 'block';
+    saveDraft();
+    if (scroll) form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  cards.forEach(function (c) {
+    c.addEventListener('click', function () { setType(c.getAttribute('data-type'), true); });
+  });
+
+  /* 下書きの保存・復元（入力済みデータを絶対に失わない） */
+  function saveDraft() {
+    var data = { _type: currentType };
+    fields.forEach(function (f) {
+      if (f.type === 'radio') { if (f.checked) data[f.name] = f.value; }
+      else if (f.value) data[f.name] = f.value;
+    });
+    try { localStorage.setItem(STORE_KEY, JSON.stringify(data)); } catch (e) {}
+  }
+  fields.forEach(function (f) { f.addEventListener('input', saveDraft); });
+
+  try {
+    var saved = JSON.parse(localStorage.getItem(STORE_KEY) || 'null');
+    if (saved) {
+      var restored = false;
+      fields.forEach(function (f) {
+        if (f.type === 'radio') { if (saved[f.name] === f.value) { f.checked = true; restored = true; } }
+        else if (saved[f.name]) { f.value = saved[f.name]; restored = true; }
+      });
+      if (saved._type) setType(saved._type, false);
+      if (restored) document.getElementById('formRestoreNote').classList.add('show');
+    }
+  } catch (e) { /* 壊れた保存データは無視して新規入力へ */ }
+
+  /* URLパラメータ ?type=recruit|media|other で事前選択（採用帯などからの導線用） */
+  var param = new URLSearchParams(location.search).get('type');
+  if (param && TYPE_LABELS[param] && !currentType) setType(param, false);
+
+  /* 送信 */
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var errBox = document.getElementById('formError');
+    errBox.classList.remove('show');
+
+    if (!CONFIG.ACTION) {
+      errBox.innerHTML = '送信先の接続準備中です。お手数ですが各店舗のInstagram（<a href="https://www.instagram.com/zenryoku.omiyaeast/" target="_blank" rel="noopener noreferrer">大宮東口店</a>／<a href="https://www.instagram.com/zenryoku.akabane/" target="_blank" rel="noopener noreferrer">赤羽店</a>）のDMからご連絡ください。<strong>入力いただいた内容はこの端末に保存されています。</strong>';
+      errBox.classList.add('show');
+      return;
+    }
+
+    var btn = document.getElementById('submitBtn');
+    btn.disabled = true;
+    btn.textContent = '送信中…';
+
+    var fd = new FormData();
+    fd.append(CONFIG.ENTRY.type, TYPE_LABELS[currentType]);
+    fd.append(CONFIG.ENTRY.name, form.name.value);
+    fd.append(CONFIG.ENTRY.email, form.email.value);
+    if (form.tel.value) fd.append(CONFIG.ENTRY.tel, form.tel.value);
+    if (currentType === 'recruit') {
+      var shop = form.querySelector('input[name="shop"]:checked');
+      var exp = form.querySelector('input[name="exp"]:checked');
+      if (shop) fd.append(CONFIG.ENTRY.shop, shop.value);
+      if (exp) fd.append(CONFIG.ENTRY.exp, exp.value);
+    }
+    if (currentType === 'media' && form.media.value) fd.append(CONFIG.ENTRY.media, form.media.value);
+    if (form.message.value) fd.append(CONFIG.ENTRY.message, form.message.value);
+
+    /* Googleフォームへはno-corsで送る（応答は読めないため、fetch完了＝送信成功として扱う定番方式） */
+    fetch(CONFIG.ACTION, { method: 'POST', mode: 'no-cors', body: fd })
+      .then(function () {
+        try { localStorage.removeItem(STORE_KEY); } catch (e) {}
+        document.getElementById('formArea').style.display = 'none';
+        document.getElementById('formResult').classList.add('show');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      })
+      .catch(function () {
+        errBox.classList.add('show');
+        btn.disabled = false;
+        btn.textContent = 'この内容で送信する';
+      });
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+{
+  "_説明": "写真ローテーションの台帳。pools=写真の候補リスト、slots=ページ内の各写真枠がどのプールを使うか。月が変わると自動で次の写真に切り替わる。新しい写真は assets/images/ に入れて、使いたいプールにファイル名を1行追加するだけ。",
+  "mode": "monthly",
+  "pools": {
+    "topHero":      ["omiya-campaign.jpg", "akabane-cover.jpg", "akabane-wide.jpg"],
+    "topAbout":     ["akabane-space.jpg", "omiya-space.jpg", "omiya-cover.jpg"],
+    "topMethod":    ["omiya-staff.jpg", "akabane-staff.jpg"],
+    "cardOmiya":    ["omiya-space.jpg", "omiya-cover.jpg", "omiya-campaign.jpg"],
+    "cardAkabane":  ["akabane-cover.jpg", "akabane-staff.jpg", "akabane-space.jpg"],
+    "omiyaHero":    ["omiya-campaign.jpg", "omiya-space.jpg"],
+    "omiyaIntro":   ["omiya-cover.jpg", "omiya-space.jpg"],
+    "omiyaMethod":  ["omiya-staff.jpg"],
+    "omiyaAccess":  ["omiya-space.jpg", "omiya-cover.jpg"],
+    "akabaneHero":  ["akabane-cover.jpg", "akabane-wide.jpg"],
+    "akabaneIntro": ["akabane-wide.jpg", "akabane-space.jpg"],
+    "akabaneMethod":["akabane-staff.jpg"],
+    "akabaneAccess":["akabane-space.jpg", "akabane-wide.jpg"],
+    "gallery":      ["omiya-space.jpg", "akabane-staff.jpg", "omiya-cover.jpg", "akabane-space.jpg", "omiya-staff.jpg", "akabane-wide.jpg", "akabane-cover.jpg", "omiya-campaign.jpg"]
+  },
+  "slots": {
+    "top-hero":       { "pool": "topHero" },
+    "top-about":      { "pool": "topAbout" },
+    "top-method":     { "pool": "topMethod" },
+    "card-omiya":     { "pool": "cardOmiya" },
+    "card-akabane":   { "pool": "cardAkabane" },
+    "omiya-hero":     { "pool": "omiyaHero" },
+    "omiya-intro":    { "pool": "omiyaIntro" },
+    "omiya-method":   { "pool": "omiyaMethod" },
+    "omiya-access":   { "pool": "omiyaAccess" },
+    "akabane-hero":   { "pool": "akabaneHero" },
+    "akabane-intro":  { "pool": "akabaneIntro" },
+    "akabane-method": { "pool": "akabaneMethod" },
+    "akabane-access": { "pool": "akabaneAccess" },
+    "gallery-1":      { "pool": "gallery", "offset": 0 },
+    "gallery-2":      { "pool": "gallery", "offset": 1 },
+    "gallery-3":      { "pool": "gallery", "offset": 2 },
+    "gallery-4":      { "pool": "gallery", "offset": 3 }
+  }
+}

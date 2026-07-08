@@ -18,6 +18,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/site.css">
   <script src="assets/site.js" defer></script>
+  <script src="assets/rotate.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">本文へ移動</a>
@@ -41,7 +42,7 @@
     <a href="#method">全力ストレッチとは</a>
     <a href="#stores">店舗を選ぶ</a>
     <a href="#recruit">採用情報</a>
-    <a href="#social">SNS</a>
+    <a href="contact/index.html">お問い合わせ</a>
     <a class="nav-cta" href="#stores">予約する</a>
   </nav>
 </header>
@@ -51,7 +52,7 @@
   <!-- ヒーロー -->
   <section class="hero" id="top" style="padding:0">
     <div class="hero-media" aria-hidden="true">
-      <img src="assets/images/omiya-campaign.jpg" alt="" width="1600" height="994">
+      <img src="assets/images/omiya-campaign.jpg" alt="" width="1600" height="994" data-photo="top-hero">
     </div>
     <p class="hero-watermark" aria-hidden="true">全力</p>
     <div class="hero-inner">
@@ -86,7 +87,7 @@
     <div class="container">
       <div class="split">
         <div class="split-media reveal">
-          <img src="assets/images/akabane-space.jpg" alt="全力ストレッチの完全個室の施術スペース" loading="lazy" width="1080" height="1080">
+          <img src="assets/images/akabane-space.jpg" alt="全力ストレッチの完全個室の施術スペース" loading="lazy" width="1080" height="1080" data-photo="top-about">
           <span class="frame-line" aria-hidden="true"></span>
           <span class="img-label">PRIVATE ROOM</span>
         </div>
@@ -106,7 +107,7 @@
     <div class="container">
       <div class="split reverse">
         <div class="split-media reveal">
-          <img src="assets/images/omiya-staff.jpg" alt="女性トレーナーによるマンツーマンのストレッチ施術" loading="lazy" width="985" height="948">
+          <img src="assets/images/omiya-staff.jpg" alt="女性トレーナーによるマンツーマンのストレッチ施術" loading="lazy" width="985" height="948" data-photo="top-method">
           <span class="frame-line" aria-hidden="true"></span>
           <span class="img-label">ONE ON ONE</span>
         </div>
@@ -139,7 +140,7 @@
       </div>
       <div class="store-cards">
         <a class="store-card reveal" href="omiya/index.html">
-          <img src="assets/images/omiya-space.jpg" alt="" loading="lazy" width="1280" height="1280">
+          <img src="assets/images/omiya-space.jpg" alt="" loading="lazy" width="1280" height="1280" data-photo="card-omiya">
           <div class="store-card-copy">
             <span class="en">Saitama / Omiya</span>
             <h3>大宮東口店</h3>
@@ -149,7 +150,7 @@
           </div>
         </a>
         <a class="store-card reveal" href="akabane/index.html">
-          <img src="assets/images/akabane-cover.jpg" alt="" loading="lazy" width="1600" height="900">
+          <img src="assets/images/akabane-cover.jpg" alt="" loading="lazy" width="1600" height="900" data-photo="card-akabane">
           <div class="store-card-copy">
             <span class="en">Tokyo / Akabane</span>
             <h3>赤羽店</h3>
@@ -168,7 +169,7 @@
       <p class="eyebrow reveal">Recruitment</p>
       <h2 class="reveal">リピート率93%の技術を、<br>あなたの手に。</h2>
       <p class="reveal">人のカラダと本気で向き合うトレーナーを募集しています。ザウルス式体幹軸調整は研修で基礎から身につけられます。まずは店舗の雰囲気を見に来てください。募集要項の詳細はお気軽にお問い合わせを。</p>
-      <a class="btn reveal" href="https://www.instagram.com/zenryoku.omiyaeast/" target="_blank" rel="noopener noreferrer">InstagramのDMで問い合わせる ↗</a>
+      <a class="btn reveal" href="contact/index.html?type=recruit">応募・問い合わせフォームへ</a>
     </div>
   </div>
 
@@ -192,6 +193,23 @@
             <span>TIKTOK</span><strong>2店舗共通ショート動画</strong><em>@zenryoku.omiyae_akabane ↗</em>
           </a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 今月の店舗風景（写真は毎月自動で入れ替わる／assets/photos.json で管理） -->
+  <section class="gallery-section center" id="gallery">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow" style="justify-content:center">Studio Scenes</p>
+        <h2 class="sec-title">今月の、お店の風景。</h2>
+        <p class="sec-lead" style="margin-left:auto;margin-right:auto">写真は毎月入れ替わります。今日の空気は、SNSでもどうぞ。</p>
+      </div>
+      <div class="gallery-track reveal">
+        <div class="gallery-card"><img src="assets/images/omiya-space.jpg" alt="店舗の風景1" loading="lazy" width="1280" height="1280" data-photo="gallery-1"></div>
+        <div class="gallery-card"><img src="assets/images/akabane-staff.jpg" alt="店舗の風景2" loading="lazy" width="1080" height="1080" data-photo="gallery-2"></div>
+        <div class="gallery-card"><img src="assets/images/omiya-cover.jpg" alt="店舗の風景3" loading="lazy" width="1280" height="1280" data-photo="gallery-3"></div>
+        <div class="gallery-card"><img src="assets/images/akabane-space.jpg" alt="店舗の風景4" loading="lazy" width="1080" height="1080" data-photo="gallery-4"></div>
       </div>
     </div>
   </section>
@@ -229,6 +247,7 @@
       <div class="footer-shops">
         <p>大宮東口店｜埼玉県さいたま市大宮区大門町3-59 小沢ビル3F｜<a href="tel:048-606-3412">048-606-3412</a></p>
         <p>赤羽店｜東京都北区赤羽2-17-7 プライム赤羽4F｜<a href="tel:090-9710-1059">090-9710-1059</a></p>
+        <p><a href="contact/index.html">お問い合わせ（求人・メディア出演依頼・その他）</a></p>
       </div>
     </div>
     <div class="mock-note">【提案用モック】本サイトはHP制作のご提案用サンプルです。料金・口コミ件数・店舗情報は2026年7月時点の公式サイト（zn-stretch.com）・ホットペッパービューティー掲載情報に基づく仮置きで、正式公開時にはオーナー様確認のうえ差し替えます。初回クーポン価格は変更される場合があります。リピート率93%は全力ストレッチ公式サイトの公表値です。</div>

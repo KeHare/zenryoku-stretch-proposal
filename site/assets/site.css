@@ -244,6 +244,16 @@ section{padding:110px 0}
 .store-card-copy .go{position:absolute;right:30px;bottom:34px;width:52px;height:52px;border:1px solid var(--gold);color:var(--gold-light);display:flex;align-items:center;justify-content:center;font-size:19px;transition:.35s}
 .store-card:hover .go{background:var(--gold);color:var(--black)}
 
+/* ---- 今月の店舗風景（写真は毎月自動ローテーション） ---- */
+.gallery-section{background:var(--cream)}
+.gallery-track{display:flex;gap:16px;overflow-x:auto;padding-bottom:14px;scroll-snap-type:x mandatory;scrollbar-width:none}
+.gallery-track::-webkit-scrollbar{display:none}
+.gallery-card{flex:0 0 320px;scroll-snap-align:start;position:relative;height:320px;overflow:hidden}
+@media(min-width:768px){.gallery-card{flex-basis:calc(25% - 12px);min-width:250px}}
+.gallery-card img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.gallery-card:hover img{transform:scale(1.05)}
+.gallery-card::after{content:"";position:absolute;inset:12px;border:1px solid rgba(243,239,230,.45);pointer-events:none}
+
 /* ---- 出現アニメーション ---- */
 .reveal{opacity:0;transform:translateY(34px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
 .reveal.in{opacity:1;transform:none}
