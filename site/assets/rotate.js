@@ -17,7 +17,8 @@
     .then(function (res) { return res.json(); })
     .then(function (manifest) {
       var now = new Date();
-      var seed = now.getFullYear() * 12 + now.getMonth(); /* 月が変わると+1 */
+      /* 週替わり：1970年からの通算週番号。月曜始まりで週が変わるたびに+1 */
+      var seed = Math.floor((now.getTime() + 4 * 864e5) / (7 * 864e5)); /* +4日で木曜起点=月曜始まり週に */
 
       Object.keys(manifest.slots).forEach(function (slotName) {
         var el = document.querySelector('[data-photo="' + slotName + '"]');
